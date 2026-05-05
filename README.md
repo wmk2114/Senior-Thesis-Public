@@ -1,4 +1,4 @@
-# We Don't Do That: State Identity and Nuclear Non-Use (Public Repository)
+# We Don't Do That: State Identity and Nuclear Non-Use
 Is the use of nuclear weapons taboo, and if it is not, how can people's aversion to it be strengthened?
 
 ## Overview
