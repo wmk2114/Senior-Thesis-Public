@@ -22,5 +22,5 @@ In coding my analysis, I used AI in four capacities. In the order of least inten
 - ChatGPT & Claude were used to line edit code if there were syntax issues
 - ChatGPT was used to generate pseudocode in each of my .R files
 - ChatGPT was used to turn certain lines of code I wrote into functions that could be implemented via `apply()` functions
-- ChatGPT was used to create functions that implemented inverse covariance weighting and principal component aalysis. Claude was used to confirm that the implementation was correct, and I also reviewed the generated code myself, comparing it reputable scholarship on how to use both ICW and PCA.
+- ChatGPT was used to create functions that implemented inverse covariance weighting and principal component analysis. Claude was used to confirm that the implementation was correct, and I also reviewed the generated code myself, comparing it reputable scholarship on how to use both ICW and PCA.
 
