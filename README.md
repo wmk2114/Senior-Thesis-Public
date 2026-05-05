@@ -11,7 +11,7 @@ This thesis entertains three questions commonly debated in international relatio
 You can find the final version of my thesis [here](https://wmk2114.github.io/my-site/pdfs/Senior%20Thesis%20Wyatt%20King.pdf]).
 
 ## Data Sources
-To collect my data, I fielded an online survey experiment using Qualtrics, with respondents being recruited via Prolific. I do not include my data in this public repository. As part of my thesis, I also include data from a 1994 survey conducted by the US Information Agency. This data was found through [Roper iPoll](https://ropercenter.cornell.edu/ipoll/study/31084587).
+To collect my data, I fielded an online survey experiment using Qualtrics, with respondents being recruited via Prolific. **I do not include my data in this public repository.** As part of my thesis, I also include data from a 1994 survey conducted by the US Information Agency. This data was found through [Roper iPoll](https://ropercenter.cornell.edu/ipoll/study/31084587).
 
 ## Reproduction
 To reproduce my data analysis and visualization, use the .R scripts included in this repository. I broke up my data analysis across several .R files, so that I could keep my environment clean across each. **Data Preprocessing.R** is the file in which I do my data cleaning, both for the Qualtrics data and the 1994 survey data. **Main Analysis.R** hosts the analyses that I included in-text. **Robustness Tests.R** includes all of the analyses included in my appendix. **Data Visualizations.R**, true to its name, includes all of my figures. To run each of the latter three files, you will have to source specific objects from **Data Preprocessing.R** into your environment.
