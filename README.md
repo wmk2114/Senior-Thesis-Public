@@ -8,7 +8,7 @@ This thesis entertains three questions commonly debated in international relatio
 - How do conceptions of state identity impact people's support for norm-breaking actions?
 - How does the institutionalization of non-use affect the public's opposition to nuclear use?
 
-You can find the final version of my thesis [here](https://wmk2114.github.io/my-site/pdfs/Senior%20Thesis%20Wyatt%20King.pdf]).
+You can find the final version of my thesis [here](https://wmk2114.github.io/my-site/pdfs/Senior%20Thesis%20Wyatt%20King.pdf]). I am grateful to have been awarded the [Charles A. Beard Prize](https://polisci.columbia.edu/content/prizes-and-awards) for this paper.
 
 ## Data Sources
 To collect my data, I fielded an online survey experiment using Qualtrics, with respondents being recruited via Prolific. **I do not include my data in this public repository.** As part of my thesis, I also include data from a 1994 survey conducted by the US Information Agency. This data was found through [Roper iPoll](https://ropercenter.cornell.edu/ipoll/study/31084587).
