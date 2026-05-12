@@ -1,0 +1,1047 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{authblk}      % Optional: better author formatting
+\usepackage{setspace}     % Optional: spacing control
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{caption}
+\usepackage{pdflscape}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{adjustbox}
+\usepackage{tabularray} % For talltblr environment
+\usepackage{url}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes}
+\usepackage{natbib}
+\usepackage{siunitx}
+\usepackage{pdfpages}
+\usepackage{float}
+\usepackage[raggedright]{ragged2e}
+\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+\usepackage[letterpaper,margin=1in]{geometry}
+\bibliographystyle{apsr}   % or plainnat, chicago, apa, etc.
+\setcitestyle{authoryear,open={(},close={)},aysep={ }}
+
+
+\title{We Don't Do That: State Identity and Nuclear Non-Use\footnote{Presented to the Columbia University Department of Political Science for satisfactory completion of the requirements to graduate with departmental honors.}} 
+\author{Wyatt King\footnote{I thank my thesis advisor, John Marshall, honors seminar proctor, Shigeo Hirano, and graduate teaching assistant, Indira Tirumala, for their feedback in developing all aspects of this paper. Likewise, I thank my past professors, including Nikhar Gaikwad for his advice on applying to the honors seminar and Aqil Shah for providing me with much of the readings that inspired this project. I am grateful to the Department of Political Science, Undergraduate Research and Fellowships, and the Columbia Experimental Laboratory for the Social Sciences for providing funding to support this project. Lastly, I thank my friends—Conrad Hutchins, Nicole Wong, John Garbi, Oscar Landa Samano (“OLS”), Erin Stoeckig, and many, many others—for entertaining my frequent digressions about nuclear weapons.}}
+
+\date{Submitted April 1, 2026}
+
+
+\begin{document}
+\maketitle
+\begin{abstract} 
+Is there a taboo against atomic weapons use, and if there is not, how can the public's aversion to it be strengthened? Recent survey experiments conducted in Western states have shown that public opinion is far more receptive to nuclear use than previously thought, with compelling majorities supporting it when it achieves a noteworthy strategic objective. I contribute to this scholarship by fielding a survey experiment in which I present Indian respondents with a hypothetical counterforce attack against Pakistan. Using two treatment arms—one exposing respondents to identity-based appeals and one informing them of India's no first use policy—I test constructivist scholarship arguing that norms' constitutive effects and their institutionalization entrenches public opposition to nuclear weapons. Ultimately, I find little evidence that there is either a nuclear taboo or that identity-based appeals reifies opposition. That said, informing people about India's NFU meaningfully strengthens the public's aversion to nuclear use.
+
+\end{abstract}
+
+\newpage
+\doublespacing
+\begin{center}
+\blockquote{While I am convinced of the virtue of non-violence and its power, I am not sure that people in this country, or for that matter of any other country, at the present moment are capable of carrying the burden of non-violence. And if they fail, they fail utterly.}
+
+- Jawaharlal Nehru speaking at the Anti-Nuclear Arms Convention, 1962
+\end{center}
+
+\section{Introduction}
+In international relations scholarship, political scientists have often taken after microeconomic theory in assuming that states are rational and selfish \citep{waltz_man_1959}. Neorealist scholars presuppose that states are strictly security seeking, unmoved by considerations of fairness or altruism in an international system predicated on anarchy and self-help. Since the “constructivist turn,” however, scholars have challenged the descriptive accuracy of assuming states to be egoistic and the international system anarchic \citep{wendt_anarchy_1992}. Instead, individual leaders, domestic constituencies, and states as units in and of themselves can be constrained by norms of how they are meant to behave. 
+
+Crucial to how norms are theorized to affect state behavior is identity \citep{finnemore_international_1998}. If an action is so morally reprehensible as to contradict a state's perception of itself, then it will refrain from whatever that action is. Because identity and norms are difficult to measure numerically, constructivist scholars have often resorted to process-tracing and other qualitative means to substantiate their argument that states' behavior is mediated by ideational factors \citep{peez_contributions_2022}. Although these approaches have been useful in illustrating how identity affects elites' attitudes toward nuclear use \citep{tannenwald_nuclear_2007}, collateral damage \citep{crawford_accountability_2013}, and other norm-breaking behavior, it has limited the scope of constructivist epistemology. The lack of quantitatively-driven, positivist study is striking given that experimental research has shown priming national identity can alter political behavior, such as by reducing affective polarization \citep{levendusky_americans_2018} or changing attitudes toward immigration \citep{wojcieszak_social_2018}. In this paper, I seek to redress this methodological gap by fielding a survey experiment in which Indian respondents are exposed to identity-based arguments opposing a hypothetical nuclear attack against Pakistan. 
+
+My focus on nuclear weapons follows from scholarship that has characterized non-use as among the strongest norms in the international system. Describing use as repulsive and “taboo,” Nina \citet{tannenwald_nuclear_2007} contends that non-use is reflexive. Even in dire circumstances, a shibboleth is attached to nuclear weapons, effectively eliminating states' motivation to use them. Realists have criticized Tannenwald's argument, saying that if a norm against non-use exists at all, it is epiphenomenal—the product of egoistic states acting out of self-interest \citep{sagan_realist_2004}. To substantiate their argument that no taboo exists, Scott Sagan and Benjamin Valentino have conducted survey experiments revealing that Western public opinion is far more receptive to the use of nuclear weapons than previously thought, with compelling majorities approving of their use in circumstances where they achieve a compelling strategic objective \citep{press_atomic_2013, sagan_revisiting_2017, dill_kettles_2022}.
+
+By focusing on India, I test the salience of identity-based arguments in the circumstance where they are most likely to have an effect. Unlike in Western, nuclear armed states, political elites in India have historically framed non-violence as morally obligatory and a touchstone for its foreign policy \citep{perkovich_indias_2001, hymans_psychology_2006, mehta_still_2009, bajpai_indian_2014}. Following World War II, India was among the staunchest proponents of global disarmament and continued to be so even after it tested nuclear weapons. Today, although there is widespread doubt that India would abide by its no first use policy (NFU) during a crisis \citep{clary_indias_2019, sundaram_india_2018}, political elites still explicitly assert that first use is antithetical to Indian culture and civilization.
+
+Aside from entertaining how identity affects attitudes toward nuclear weapons use, I consider how the institutionalization of non-use can do the same. Whereas previous studies have focused on how international law can restrict support for nuclear use \citep{carpenter_stopping_2020, sagan_atomic_2024}, I consider how NFUs do the same. Whereas international law promotes shared norms, NFUs reinforce perceptions of states' personal identities as being incompatible with nuclear use. This line of argument presents a modification to scholars' understanding of NFUs' credibility. Specifically, it implies that NFUs can trigger audience costs by reifying an image of state identity as being incompatible with nuclear use.
+
+In addition to testing the effects of novel treatments on opposition for nuclear use, I operationalize opposition in a manner that is distinct from recent experimental scholarship on the taboo and better representative of Tannenwald's initial theorizing. Asking respondents whether they would vote against the sitting government for resorting to nuclear use and if they would protest such an attack, among other questions, I gauge the electoral reprisal that political elites would face for using nuclear weapons. Implementing inverse covariance weighting, I create an index that reflects respondents' composite attitudes toward nuclear use, and not strictly overall approval.
+
+Ultimately, the purpose of this thesis is twofold. Narrowly, it contributes to the upswell of survey experiments from the past ten years, in which scholars have sought to understand what factors impact public support for the use of nuclear weapons. It does so by interrogating the effects that state identity and institutionalization can have, and whether those effects are significant in the manner that scholars of the taboo suggest. More broadly, it seeks to evaluate claims in constructivist literature that norms can have a “constitutive effect,” in which people's foreign policy preferences are impacted by their impression of state identity \citep{wendt_anarchy_1992}.
+
+In total, I find little evidence that there is either a taboo against nuclear use in India or that priming conceptions of state identity can reduce opposition to it. A counterforce attack would polarize public opinion in a manner that is inconsistent with there being a taboo, and it even rallies support for the sitting government among those who favor the Bharatiya Janata Party. That said, nuclear use would also foment staunch public opposition to the government in a way that previous experimental scholarship has not found. Although priming conceptions of state identity does not reduce support for nuclear use, informing people of India's NFU does. This finding has important descriptive and normative implications because it implies that NFUs are costly signals and thus more credible ones \citep{fearon_domestic_1994}. 
+
+\section{Literature Review \& Theory}
+
+In international relations scholarship, there are two broad theoretical orientations that account for why states behave in the manner that they do: Rationalism and Constructivism \citep{katzenstein_international_1998}. Though not wholly incompatible, they differ in their understanding of states' interests and the power of norms in the international system \citep{fearon_skeptical_2002}. As part of these distinct interpretations of how states behave, rationalists argue that all states are fundamentally like one another, doing whatever advances their material interests. Constructivists counter that states have distinct identities which inform how they behave toward others.
+
+Per rationalist scholarship, states exclusively seek to improve their overall material condition \citep{waltz_man_1959, keohane_after_1984}. They may want either security, power, or wealth, but regardless of what they are pursuing, states are rational actors optimizing in the name of that interest. They are egoistic, concerned with other states only insofar as they may be an impediment to or an instrument for the realization of a strategic objective. If norms exist at all in the international system, they are epiphenomenal \citep{sagan_realist_2004}. That is to say, they are not rooted in moral reasoning but stem from states acting in a manner consistent with whatever they believe to be in their material interests. In this formulation, norms do not actually regulate state behavior but are the illusory product of states behaving rationally.
+
+Because rationalists assume that states desire comparable material objectives, there is no role for identity in shaping policy. Rather, all states are like one another in their needs. For realists, the international system is like Hobbes' state of nature. Unconstrained by an overriding legal authority, states must protect themselves using whatever means are available to them. Should a norm-breaking action, like the use of nuclear weapons or the deliberate killing of civilians, suit a state's perceived short- and long-term interests, they will follow that course of action. Neoliberals are more optimistic than realists that states can effectively cooperate to overcome collective action problems, but they operate from the same underlying assumptions about rationality and egoism. Instead of being moved by principles of what they ought to do, all states are utility-maximizers doing whatever enhances their security or wealth.
+
+Constructivism problematizes rationalists' dominant assumption that states seek to guarantee their security or otherwise improve their material condition \citep{wendt_social_1999}. Instead of treating the nature of the international system as immutable, constructivists treat it as being socially constructed \citep{finnemore_international_1998}. If states understand security as zero-sum or wealth as their ultimate objective, that is because they have been cultured into perceiving their interests in this manner. Because the constitution of the international system is a social phenomenon, constructivists argue that norms can influence states' behavior. As commonly understood, norms are “a standard of appropriate behavior for actors with a given identity,” \citep[891]{finnemore_international_1998}. If an action violates an actor's self-perceived identity, then they will refrain from whatever that action is. In simplified terms, arguments about state identity and morality amount to saying “\textit{we} don't do \textit{that}.” Because of some deeply rooted understanding of self-hood, certain behaviors are considered anathema to a state's interests \citep{wendt_social_1999}.
+
+In constructivist scholarship, identities are inter-subjective and shared between like-minded states, producing a similar pattern of behavior among states who claim that identity \citep{finnemore_international_1998}. States are incentivized to comply with norms because if they do not, they will experience embarrassment, shame, anxiety, or guilt among their peers \citep{fearon_what_1999}. As well as being social, norms can also be personal. States may be expected to act in a given way if they are “Christian,” “Marxist,” or “post-colonial,” but these titles convey little about the cultural, economic, and historical conditions that make them unique relative to other states with whom they share group identities. These personal identities create another opportunity for norms to influence state behavior. Even if a given action does not violate a norm shared by an over-arching group, it can violate an aspect of one state's identity from which it derives pride, a feeling of righteousness, or a similarly salient affect. That being said, because personally-held identities are exclusive to individual states, they are theorized to be more malleable than group identities, subject to reinterpretation if and when a norm-breaking action suits a state's material interests \citep{fearon_what_1999}. 
+
+In debates between rationalists and constructivists, no single security issue has prompted as much discourse as nuclear weapons use \citep{paul_nuclear_1995, sagan_realist_2004, tannenwald_nuclear_2007, paul_taboo_2010, smetana_forum_2021}. According to balance of power realists, nuclear non-use is attributable to the achievement of deterrence during the Cold War. Because no state can use atomic weapons without fearing annihilating retaliation, it was in no one's material interests to use nuclear weapons. For however much deterrence explains relations between nuclear-armed opponents, it does not explain the lack of nuclear use in conflicts between nuclear-armed and non-nuclear states. Why, for example, did the U.K. not use nuclear weapons during the Falklands War, or the U.S. during the first Gulf War? In each instance, there is reason to think that nuclear weapons would have been useful on the battlefield, yet even discussion of their use was “taboo” \citep{paul_nuclear_1995, tannenwald_nuclear_2007}. 
+
+Constructivists attribute the \textit{de facto} prohibition on the first use of nuclear weapons to a widespread, moral revulsion attached to them. A taboo transcends a norm because breaching it is unthinkable and constitutes crossing a bright red line. Breaking the nuclear taboo is not only something that states avoid doing, as they might eschew deliberately killing civilians, but it is even unimaginable. \citet{tannenwald_nuclear_2007} argues that the taboo developed, in part, because states began to frame their identity as being antithetical to nuclear weapons use. During the first Gulf War, for example, public commentators said that using nuclear weapons would be “barbaric” and cause the U.S. to become “the pariah of nations.”\footnote{Various quotes in \citet[304]{tannenwald_nuclear_2007}}  When asked about using tactical nuclear weapons against Iraq, White House Chief of Staff John Sununu said, “We just don’t do
+things like that.”\footnote{Quoted in \citet[303]{tannenwald_nuclear_2007}.}
+
+
+Today, the most lively debate between rationalists and constructivists over nuclear non-use takes the form of public opinion research \citep{smetana_forum_2021}. \citet{tannenwald_nuclear_2007} argues that although political elites ultimately decide whether nuclear weapons should be used, staunch public opposition can limit the probability that they are. To substantiate her claim that the public is, in fact, averse to nuclear use, Tannenwald points to surveys showing declining support for the U.S.'s bombings of Hiroshima and Nagasaki since the 1940s.\footnote{See \citet{sagan_revisiting_2017} for a condensed overview of this polling.} Polling conducted concurrently with conflicts during the 20th century also suggests that there was broad public opposition to using atomic weapons. Before the first Gulf War, for example, more than 75\% of respondents opposed using nuclear weapons should the war have become a stalemate, and a slim majority opposed their use even if Iraq attacked American troops with chemical or biological weapons (CNN/Time Magazine 1990). 
+
+Over the last ten years, skeptics have challenged whether there is a widespread, public abhorrence of nuclear weapons. Focusing on methodological innovations instead of theoretical ones \citep{smetana_forum_2021}, new research has employed survey experiments to evaluate the extent of public support for a first strike nuclear attack in various hypothetical scenarios. \citet{sagan_revisiting_2017} notably simulated what they argue is a modern-day equivalent of the U.S.'s bombings of Japan. Contending that polling Americans about their retrospective preferences for nuclear use during World War II does not adequately prime them to think about the trade-offs of restraint, they presented respondents with a scenario in which the U.S. dropped an atomic bomb on Iran's second largest city to end a ground war that would otherwise kill 20,000 American troops. Despite respondents being told that such an attack would kill two million civilians, 60\% of people approved of it.
+
+Following the publication of these findings, similar studies have since been released affirming that large swaths—if not outright majorities—of the Western public would approve of the first-use of nuclear weapons in different hypothetical scenarios \citep{aronow_note_2019,haworth_what_2019, dill_kettles_2022,schwartz_when_2024}. As these studies have proliferated, the scope of debate has expanded beyond whether there is a broad based public opposition to nuclear use to what factors can attenuate support for it. In answering this question, scholars have ignored identity, focusing narrowly on three factors: The military and strategic utility of a nuclear attack, states' legal obligations under international law, and the number of civilian casualties incurred by an attack.
+
+\textit{Military and Strategic Utility} Among the first considerations that Sagan and Valentino entertained in their on-going effort to ascertain what factors affect public preferences for nuclear use was the military and strategic utility of an attack. Together with Daryl Press, they argue that the public overwhelmingly—though not exclusively—follows a utilitarian logic of consequences in weighing whether to support nuclear use \citep{press_atomic_2013}. According to the logic of consequences, people's support for nuclear use is predicated on their perceptions of the combined short- and long-term advantages of nuclear weapons as compared to conventional ones. By the military utility of an attack, Press, Sagan, and Valentino refer to the immediate battlefield advantages conferred by atomic weapons use. Should a nuclear bomb destroy an enemy or their infrastructure more substantially, with greater certainty, and while better mitigating domestic casualties than conventional arms, then people will be more inclined to support their use.
+
+By the strategic utility of an attack, the authors refer to the long-run disadvantages tied to setting a new precedent for nuclear use. As T.V. \citet{paul_taboo_2010} argues, nuclear non-use can be understood as an iterated prisoner's dilemma. On any one battlefield, it may be in a state's interests to defect and use nuclear weapons, but doing so incentivizes an adversary to do the same in a future conflict. As a result, nuclear use may not be desirable because of how it transforms opponents' utility functions during future crises. According to this formulation, the apparent norm against nuclear use is epiphenomenal. Rather than stemming from moral reasoning, it is the product of coordination, either implicit or explicit, between nuclear-armed states to achieve a mutually beneficial outcome.
+
+Survey experiments have consistently shown that military and strategic calculations exert a powerful influence on the public's willingness to support nuclear weapons use. When a state has a nuclear-armed opponent, the public is far less willing to use nuclear weapons than in asymmetric dyads \citep{haworth_what_2019,allison_under_2022, smetana_moscow_2022}. Holding the opponent constant, support for nuclear use increases dramatically with the chances of a successful attack relative to conventional weapons \citep{press_atomic_2013}. To test whether the strategic utility of an attack impacts public preferences for nuclear use, \citet{sagan_atomic_2024} replicated their\textit{ Hiroshima in Iran} scenario, but informed respondents that members of the Joint Chiefs of Staff worried that using nuclear weapons would set a bad precedent that could ultimately harm American security. In this treatment group, approval of the attack declined by nearly fifteen percentage points.
+
+\textit{International Law}
+\noindent
+Beyond the military and strategic utility of a nuclear attack, scholars have considered how international law may limit states' willingness to use nuclear weapons. According to \citet{tannenwald_nuclear_2007}, the institutionalization of nuclear non-use through international agreements has concretized the taboo against atomic weapons. Tannenwald interprets institutionalization broadly, saying that it spans not only international law but also the nuclear Non-Proliferation Treaty (NPT), bilateral anti-ballistic missile agreements, and arms control treaties. In survey experiments, however, scholars have primarily focused on international law.
+
+According to the logic of consequences, international law may impact public opinion if people believe that, by breaking it, their state will face material repercussions for their actions. Because international law lacks an enforcement mechanism, \citet{sagan_does_2020} argue that it likely has little effect on public attitudes toward nuclear use. Constructivists, however, have argued that international law may have an effect on state behavior if states are sensitive to how violations of international law compromise their constructed identities. According to the latter, states are rule followers who, though not obligated to behave in a given manner, do so anyways to validate a social identity that they associate with \citep{fearon_skeptical_2002}. According to this thinking, states are not strictly security seekers as neorealists suggest. Rather, they are bound by an informal set of ideas and norms for how states similar to them are expected to behave. 
+
+Outside of nuclear use, surveys have found that the American public is reluctant to support actions knowing that they violate international law \citep{chilton_laws_2014, kreps_flying_2014}. \citet{carpenter_stopping_2020}, replicating a scenario from \textit{Hiroshima in Iran} in which the U.S. uses conventional weapons in a saturation bombing, find that respondents' support for the bombing declines after they are informed that it violates international law. \citet{sagan_does_2020} question the relevance of their finding, however, by pointing out that the effect size of informing people about international law is substantively small and easily reversible. Replicating Carpenter and Montgomery's research, they found that while a minority of respondents approved of the saturation bombing after being informed of it violating international law, only slightly less than 50\% actually did. In a follow up looking at nuclear use, \citet{sagan_atomic_2024} note that if there was disagreement among the Joint Chiefs of Staff regarding the legality of a strike, the initial effect of telling people about international law washed out.
+
+
+\textit{Civilian Casualties and Moral Frameworks}
+\noindent
+Scholars have considered how the number of civilian casualties may change the extent of support for nuclear use. If it is true that states have internalized a sensitivity to excessive civilian casualties, owing in part to the legacy of aerial bombings during World War II \citep{pinker_better_2011, thomas_ethics_2014}, then it should follow that people would be opposed to a nuclear attack that would cause large-scale, unnecessary violence. On theoretical grounds, \citet{downes_desperate_2006} and \citet{sagan_revisiting_2017} dispute this characterization by arguing that if such a norm exists at all, it is not strong enough to withstand the domestic political pressure that would arise from a costly war. Downes even concludes that democratically-elected governments are more likely to commit violence against civilians because political elites will be more sensitive to the costs of conflict and, thus, more likely to resort to desperate means. Sagan and Valentino, focusing more narrowly on public opinion, make a similar point, arguing that voters are willing to tolerate large-scale violence perpetrated against civilians in the event substantial troop casualties would otherwise occur.
+
+To test if civilian immunity exerts a constraining influence on nuclear use, \citet{sagan_revisiting_2017} manipulated the number of civilian casualties incurred by a first-strike attack, holding the number of domestic casualties in a would-be ground war constant at twenty thousand. Despite ratcheting the number of expected civilian deaths from one hundred thousand to two million in their \textit{Hiroshima in Iran} study, public approval of the attack decreased by only a fraction of a percentage point. Meanwhile, preference for the nuclear attack over continuing the ground war declined by eight percentage points, a margin that was not statistically significant in their sample.
+
+In response to this finding, \citet{rathbun_greater_2019} argue that there are a diversity of moral frameworks that people may use in evaluating the merits of nuclear use and not strictly a logic of consequences or appropriateness as Press, Sagan, and Valentino initially argued. Using the typology of moral foundations developed by \citet{graham_mapping_2011}, they found that people's support for nuclear use changes depending on whether they adopt liberal, non-liberal, or retributive moral frameworks. Based on this typology, Rathbun and Stein subset  respondents on whether they had “individualizing foundations,” a sensitivity to others' suffering and a concern for equality and fairness, or “binding foundations,” which emphasize deference to authority, in-group loyalty, and the subordination of individual rights to the community. Among those who had stronger individualizing beliefs, support for nuclear decreased substantially as civilian causalities rose. That being said, few respondents in the total population preferred using nuclear weapons to conventional ones as the number of civilian casualties approached one million, in contrast to Sagan and Valentino's earlier finding.
+
+Cumulatively, research on the public's aversion to nuclear use has shown that its attitudes are not deontological. Rather than there being a taboo, the public is supportive of nuclear use to prevent domestic casualties and achieve a compelling military objective. Yet, even as extant surveys have revealed that the public does not possess a categorical aversion to nuclear use, there is reason to believe that a norm exists in some capacity, regardless of if is morally-driven or epiphenomenal. Holding all else constant, American respondents vastly prefer the use of conventional weapons to nuclear ones \citep{press_atomic_2013}. Moreover, even as existing studies have created “tough tests” for the taboo, in which atomic weapons use would be most compelling, a large minority of people still disapprove of it \citep{sagan_revisiting_2017}.
+
+Although survey experiments have helped clarify what factors impact American attitudes toward nuclear use, they have yet to test one of the underlying tensions between constructivist and rationalist approaches: that states' identities are socially constructed and can influence their understanding of what is appropriate conduct. If it is the case that Americans are receptive to strategic nuclear use, impervious to the number of civilian causalities, and apathetic about the legality of first-use, then that may not mean all states are similarly materialistic. Rather, it could imply that Americans do not configure their understanding of state identity as being antithetical to violating the nuclear taboo, international law, or civilian immunity.
+
+To be sure, \textit{ex ante}, there is reason to think that the U.S. is unique in this regard. That it is the only state to have ever used nuclear weapons outside of testing may limit how much the public understands doing so again as “un-American.” Likewise, even though the U.S. has not used atomic weapons since 1945, arms-racing during the Cold War and near-uses, such as during the Cuban Missile Crisis, may acclimate people to the possibility that nuclear weapons could and should be used when necessary. In a survey experiment of the four Western, nuclear armed states, \citet{dill_kettles_2022} found that, although no group exhibited an overwhelming aversion to nuclear use, there were statistically significant differences in their degree of support. British survey takers were less likely to approve of a limited nuclear strike than American or French ones. Israeli respondents, meanwhile, were more hawkish, both more inclined to approve of the attack and to say that it was ethical than all other groups. Though this research does not necessarily mean that identity is the mediating variable causing differences in support for nuclear use, it raises the possibility that it could be. As a result, further empirical study is required to understand the breadth of how identity can impact public attitudes toward nuclear use.
+
+In this paper, I propose advancing the experimental study of identity and nuclear use in three ways: by sampling more states in further research, testing how identity-based arguments alter support for nuclear use, and measuring how the institutionalization of nuclear non-use reinforces identity-based appeals to mitigate the public's overall approval of nuclear use.
+
+On the first count, although Dill, Sagan, and Valentino made an initial effort to understand cross-national differences in support for nuclear use, constructivists would not expect \textit{a priori} that attitudes toward it would differ meaningfully across Western, nuclear armed states. If identities are inter-subjective and shared among states, then historically close allies with similar styles of government should behave like one another. Whether it is because they have a common understanding of what a “liberal” or “civilized” state does, the overall compatibility of their identities may explain why, despite there being statistically significant differences in their degree of support, none were overwhelmingly opposed to nuclear use.
+
+To evaluate support for nuclear use in a different state with a distinct identity, I propose focusing on the one outstanding nuclear-armed democracy: India. Focusing on India is useful theoretically for two reasons. First, because it is has an elected government, there is a compelling mechanism through which public preferences for nuclear use can impact elites' actions, unlike in China, Russia, North Korea, or Pakistan. In keeping with Tannenwald's (2007) initial theorizing on the taboo, I assume that election-seeking politicians will avoid nuclear use if they fear reprimand from domestic audiences and specifically voters. Second, as I will elaborate on in the following section, India has a history of political elites framing non-violence as morally obligatory and an influential component of its foreign policy. As it manifests in nuclear doctrine, India has been among the most outspoken proponents of global disarmament since the 1950s. Even after it tested nuclear weapons, successive governments advanced plans for disarmament in international forums, often framing their support for disarmament in Gandhian or civilizational terms. Consequently, among nuclear armed states, the norm against atomic weapons has historically been most strongly entrenched in India.
+
+If India is the most likely case in which a norm against nuclear use may be observed, then the degree of absolute support is important. Should opposition to nuclear use not be overwhelming, then yet further doubt would be cast on the argument that there is a taboo against it in any case. To formalize the expectation that there is a widespread, categorical aversion to the use of nuclear weapons in public opinion, I test how strongly the public would support nuclear use in the circumstance most favorable for it. Here, I take that circumstance to be a successful counterforce attack against Pakistan that eliminates its strategic nuclear weapons. This scenario constitutes the toughest, reasonable test for the nuclear taboo in India because should it eliminate Pakistan's strategic nuclear weapons, then it could use its conventionally stronger military to take disputed territory in Kashmir without fear of excessive civilian casualties. As such, my first hypothesis is as follows: 
+
+\begin{quote}
+\textbf{H1}: Opposition to a first strike counterforce attack against Pakistan should be high among the Indian public.
+\end{quote}
+
+Regardless of if opposition to nuclear use against Pakistan may be high, it is worth considering what factors could possibly expand support for non-use. Following from constructivist theory, perceptions of state identity could be one such factor. If it is the case that states' conduct is limited by their conception of self, then it follows that invoking a given understanding of state identity will cause people to oppose behaviors incompatible with that identity. As a result, I hypothesize that:
+
+\begin{quote}
+\textbf{H2:} Public support for the use of nuclear weapons will decrease as people are exposed to arguments that it is antithetical to India's state identity.
+\end{quote}
+
+Beyond the role that identity plays in shaping state behavior, constructivist scholarship argues that the institutionalization of norms reifies them, potentially leading to their widespread internalization \citep{tannenwald_nuclear_2007, finnemore_international_1998}. As mentioned, a handful of survey experiments have looked into how priming survey respondents about international law impacts their support for nuclear use \citep{carpenter_stopping_2020, sagan_does_2020, sagan_atomic_2024}.  Focusing on international law is worthwhile and contributes to scholarly debates outside of nuclear weapons strategy regarding its effectiveness in regulating state behavior; however, pursuant Tannenwald's initial theorizing, it is worth considering how other types of institutions affect support for nuclear use. 
+
+I propose focusing on no first use policies, specifically. NFUs are unique among types of institutionalized non-use because they are explicit and unilateral. Compared to international law, which does not explicitly ban the use of small-yield tactical nuclear weapons or similarly proportionate attacks, NFUs do, amounting to an almost absolute prohibition on the first-use of nuclear weapons.\footnote{ NFUs may permit nuclear retaliation against a chemical or biological weapon attack. They may also permit a preemptive first-strike should an adversary credibly threaten an imminent nuclear attack.} As it relates to identity, NFUs are unique in that they are unilaterally declared. Rather than being the product of international agreement, NFUs are exclusively held by one state, meaning that rather than speaking to an inter-subjective, shared identity, they evoke a personal identity that states claim. In the case of India, its NFU overlaps with the commonly made nationalist claim that it is a unique moral authority in the international system and a “responsible” nuclear power, reinforcing the salience of arguments that Indian identity is incompatible with nuclear use. As such, I hypothesize that:
+
+\begin{quote}
+\textbf{H3:} Informing people about India's No First Use policy will decrease support for a first-strike nuclear attack.
+\end{quote}
+
+\begin{quote}
+\textbf{H4:} Informing individuals about India's NFU in combination with exposure to pacifistic identity-based arguments will reduce support for the use of nuclear weapons more than either treatment alone.
+\end{quote}
+
+Taken together, hypotheses two through four represent a potential theoretical modification to audience cost literature. As termed by James \citet{fearon_domestic_1994}, audience costs are the domestic reprisal that leaders face for reneging on a threat made against an adversary. The causal mechanism he proposes is that issuing a threat “evokes the national honor,” only for that honor to be impeached upon backing down from a threat. Though he does not define what he means by the term, Fearon's use of the work “honor” is problematic because of how differentiated honor cultures are both within and across states. What one considers “honorful” in the American South may not be what one considers so in Tamil Nadu. If it is the case that the Indian public takes pride from being a responsible nuclear power, as elites have, then it may be that they consider non-use itself as laudable or even “honorful.” That is to say, audience costs may not be exclusively paid by leaders who are not as violent as they promised to be. Instead, they can also be paid by leaders who deviate from a state's identity as responsible, peaceful, or similar.\footnote{Note that this explanation is distinct from “consistency costs” as described by \citet{levy_backing_2015}. Though I agree that political leaders are likely punished for entering into a war which they previously said they would avoid, here I propose that leaders also pay “identity costs.”} As a result, actions that reinforce an image of state identity as being incompatible with a norm-breaking behavior may not be cheap talk. Instead, they can make nuclear use more costly for present and future governments.
+
+\section{Case Selection}
+To test whether identity can alter support for nuclear first use, I field a survey experiment modeled off of those created by Sagan and Valentino. I conduct the experiment in India because aside from it being the only democracy with a declared no first use policy, political elites have repeatedly characterized India as a uniquely responsible and moral power. As it relates to nuclear use, diplomats and elected politicians have framed atomic weapons use as being incompatible with both India's personal identity and an inter-subjective identity shared by post-colonial states. By the former, I refer to how leaders of the Indian nationalist movement adapted non-violence to Indian foreign policy at least rhetorically. By the latter, I refer to how India has defined itself in contrast to the U.S., U.K., and other nuclear weapons states. Whereas they have often stymied efforts to achieve global disarmament, India has embraced it, criticizing others for promoting “nuclear apartheid” through the Non-Proliferation Treaty and the Comprehensive Test Ban Treaty.
+
+The incorporation of non-violence into Indian national identity stems from the nationalist movement, in which political elites argued that non-violence was both an effective anti-imperial strategy and a moral obligation. None did so as clearly as Mahatma Gandhi. According to Gandhi, people were spiritually required to uphold \textit{ahimsa}, a religiously-inflected understanding of non-violence shared by Hindus, Jains, and Buddhists that literally means “to not kill or injure” \citep{young_hinduism_2004}. Inspired by an ascetic interpretation of Hinduism, Gandhi's understanding of \textit{ahimsa} was deontological and made no meaningful distinction between offensive and defensive wars. Following from his categorical aversion to violence, Gandhi's opposition to nuclear use was staunch and unequivocal. Reflecting on the American bombings of Hiroshima and Nagasaki, he said that, “Unless now the world adopts non-violence, it will spell certain suicide for mankind” \citep[12]{mitra_moral_1987}. When challenged that nuclear weapons could be an instrument to achieving peace by creating stable deterrence, Gandhi was incisive. He compared nuclear weapons' deterrent effect to a “a man glutting himself with dainties” \citep[278]{gandhi_my_2025}. States will refrain from violence “only to return with redoubled zeal after the effect of nausea.”
+
+Following Gandhi's death, his peers in the nationalist movement adapted non-violence to Indian foreign policy, at least rhetorically. In 1954, after the U.S. and U.S.S.R. tested hydrogen bombs, Prime Minister Jawaharlal Nehru became the first world leader to call for disarmament. During negotiations over what would become the NPT, India sought to give teeth to these demands. Criticizing nuclear-armed powers for their hypocrisy in wanting to stop proliferation while allowing themselves to maintain and enlarge their nuclear arsenals, India refused to sign a multilateral non-proliferation treaty unless nuclear weapons states were required to disarm. Otherwise, the NPT amounted to what Indian diplomats called “nuclear apartheid,” in which wealthy states would secure their access to nuclear weapons and protect a crucial strategic advantage over poorer, primarily post-colonial states.
+
+To be sure, for however much India's opposition to the NPT stemmed from sincere moral feeling, it was also cut with an understanding of strategic necessity \citep{perkovich_indias_2001}. In 1964, China conducted its first nuclear tests and proceeded to build up its arsenal. Due to long-standing border disputes between the two countries, which culminated in the 1962 Sino-Indian War, China's possession of nuclear weapons risked tilting the balance of power in the Himalayas in its favor. By not signing the NPT, India guaranteed itself the option to later balance against China by testing nuclear weapons—as it would in 1974. India's balance between morally-driven foreign policy and \textit{realpolitik} was perhaps best summarized by Prime Minister Indira \citet{gandhi_statement_1968}, who in a speech before parliament said that “we shall be guided by our self-enlightenment and the considerations of national security.” The invocation of self-enlightenment is particularly pertinent because it codes Indian foreign policy within a uniquely held understanding of what type of behavior is ennobling. 
+
+Even as India pursued nuclear weapons, it continued to frame itself as a non-violent and responsible power. The codename for India's nuclear test was “smiling Buddha,” and in announcing its success, Prime Minister Gandhi deemed it a “peaceful nuclear explosion.” In keeping with its naming conventions, after initially testing, India did not press its nuclear advantage over Pakistan. It did not invest in ballistic missile systems or submarines that would make its deterrent more credible, and it did not test nuclear weapons again until more than two decades later. Moreover, India continued its advocacy for global disarmament. Gandhi coordinated a group of five other states to advocate for disarmament, and in 1988, her son, Prime Minister Rajiv Gandhi, proposed a plan at a special U.N. summit on disarmament that would eliminate nuclear weapons globally by 2010. 
+
+Compared to Congress-led governments of the mid- to late-twentieth century, the Bharatiya Janata Party (BJP) has been far less averse to nuclear weapons \citep{hymans_psychology_2006}. With the BJP leading the government for the first extended period of time, Prime Minister Atal Vajpayee authorized India's second nuclear weapons tests in 1998, despite security analysts widely believing that doing so unnecessarily inflamed tensions in South Asia. Even as he authorized nuclear weapons testing, Vajpayee attempted to maintain India's reputation as a vocal proponent of disarmament. In a statement to parliament outlining nuclear doctrine after testing, \citet{vajpayee_evolution_1998} argued that not only was India a responsible nuclear state, but that “our strengthened capability adds to our sense of responsibility.” He continued to say that, \blockquote{the present decision and future actions will  continue to reflect a commitment to sensibilities and  obligations of an ancient civilization, a sense of responsibility and restraint, but a restraint born of the assurance of action, not of doubts or apprehension.}
+
+In 2002, India would more explicitly incorporate “restraint” into its nuclear doctrine. Declaring a no first use policy, Vajpayee said that India would refrain from using nuclear weapons unless first attacked by biological, chemical, or nuclear weapons. Today, there is widespread doubt regarding whether India would actually adhere to its NFU during a crisis with Pakistan \citep{clary_indias_2019, sundaram_india_2018}. In its 2014 election manifesto, the BJP said that India's NFU should be “revised and updated.” When asked by Reuters journalists what this revision entailed, an anonymous BJP source said to “read the manifesto” \citep{sanjeev_miglani_indias_2014}. After public backlash, Narendra Modi clarified that India would maintain its NFU, but since he became prime minister, Modi's government has continued to raise doubts that India will abide by it. In 2019, after a terrorist attack in Indian-controlled Kashmir, India struck non-disputed Pakistani territory for the first time since 1971. Then-U.S. Secretary of State Mike \citet{pompeo_never_2023}
+ claimed in his memoir that had American diplomats not intervened, the conflagration risked spiraling and leading to nuclear use. Several months after the attack Indian Defense Minister Rajnath Singh, standing at the site of India's second nuclear tests, announced that although India had previously “strictly adhered” to its NFU, “what happens in future depends on the circumstances” \citep{bagchi_no_2019}. In May 2025, India and Pakistan engaged in a skirmish similar to that in 2019, during which India struck a Pakistani air base near the military headquarters responsible for overseeing its nuclear arsenal. India has also built out its intelligence gathering operations, improved the range of its ballistic missile system, and developed multiple targetable re-entry vehicles that would enable it to launch a counterforce attack against Pakistan that would disable its nuclear weapons facilities \citep{clary_indias_2019}.
+
+Even as public officials have raised doubt about the legitimacy of India's NFU, they have clung to the language of India being a “responsible” nuclear state. In the same speech where he questioned that India would abide by its NFU, Singh said that “India attaining the status of a responsible nuclear nation is a matter of national pride.” After public outcry over the BJP's election manifesto, Modi called India's NFU “a reflection of cultural inheritance” \citep{busvine_indias_2014}. The contradictory nature of these statements suggests that although elites may be disillusioned with the utility of India's NFU, they still believe that it is a useful signaling device to either adversaries or a domestic public skeptical of an aggressive nuclear posture.
+
+\section{Research Design}
+To test whether identity-based arguments and knowledge of India's NFU reduce support for nuclear use, I conduct a conjoint survey experiment modeled off of those created by Sagan and Valentino. In the experiment, respondents read a scenario describing a hypothetical Indian counterforce attack against Pakistan. The situation described is consistent with India's Cold Start doctrine and inspired by what security scholars consider to be the most likely scenario in which India would first use nuclear weapons \citep{kapur_ten_2008, clary_indias_2019}. Implemented after the Kargil War, Cold Start is military doctrine enabling India to quickly mobilize along the border with Pakistan following a state-sponsored terrorist attack. Within days of mobilization, India can push across the borders with Punjab and Kashmir either to claim disputed territory or force a favorable compromise. 
+
+Although India publicly maintains a no first use policy, Christopher Clary and Vipin Narang argue that during such a ground war, India may contemplate launching a nuclear attack. Because India's military is conventionally superior to Pakistan's, the latter could consider using a small-yield tactical nuclear weapon on the battlefield to stop an Indian incursion. However, if Pakistan is incentivized to use nuclear weapons, India is encouraged to take first mover advantage and do the same. Fearing an eventual strike against one of its cities, Clary and Narang believe that India could launch a counterforce attack, where it tries to eliminate Pakistan's strategic nuclear weapons. With the risk of a large-scale Pakistani attack marginalized, India could then conduct the ground war on its own terms.
+
+\textit{A priori}, it is difficult to know how successful such an attack would actually be, given uncertainty over where Pakistan's nuclear weapons facilities are, how effective its air defenses would be, and the ordinary risks entailed by any large-scale military operation. In the article, I note that it is unclear whether all of Pakistan's strategic nuclear weapons have been destroyed, but that Indian government officials speaking on the condition of anonymity believe that there is a low chance of retaliation. I do so as to create a more difficult test for the norm against nuclear use while not misleading respondents into believing that a counterforce attack would be guaranteed to work. In a similar vein, although it is difficult to gauge how many civilians would die in a counterforce attack, I note that the World Health Organization warns that it could reach into the hundreds of thousands. Again, I do so as to not mislead respondents into believing that a counterforce attack could be committed with little harm to civilians, even if the extent of that harm is ambiguous.
+
+The story is structured like a mock news article so that key pieces of information can be highlighted in the headline, subtitle, and pull quotes.\footnote{All experimental materials can be found in  \autoref{app:vignettes}.} Specifically, I emphasize information that could influence people's understanding of the strategic utility of the attack and whether it was morally justifiable—including the target of the attack, that it was launched during an ongoing ground war, the number of civilian causalities, and the risk of retaliation.\footnote{Note that in the article, the prime minister himself says that India was facing no imminent threat of nuclear attack from Pakistan. In reality, it is implausible that a political leader would make such a confession, given the substantial domestic and international benefits of misrepresenting their motivations. That said, telling respondents that a nuclear attack was imminent would be an unreasonable test of the nuclear taboo because it would trigger people's instinct for self-defense against immediate threats.} In the article, I avoid primes that would prematurely invoke either people's partisan identities or different conceptions of state identity. Without naming the prime minister, I refer nebulously to one with masculine pronouns. By virtue of Narendra Modi currently holding office, people may imagine that his government launched the attack. However, in the body of the text, I do not actively try to stimulate this thought. Across treatment and control groups, the article is identical, except that people assigned to learn about India's NFU read an additional sentence saying that “the nuclear attack violates long-standing Indian policy that it would never use nuclear weapons unless first attacked with weapons of mass destruction.” A pull quote in the middle of the article draws further attention to this fact.\footnote{Note that to ensure no respondent mistakenly believes that the attack described is real, they are told both before reading the vignette and upon exiting Qualtrics that the scenario is hypothetical.}
+
+After reading the vignette, respondents are assigned to either reading or not reading three arguments against nuclear use.\footnote{This structure creates a 2x2 factorial experiment. Treatment conditions were block randomized on the basis of party.} The arguments are written to invoke India's personal, positive identity and its negative, social identity vis-a-vis nuclear use. The first two directly mention Gandhi, Nehru, and India's legacy of non-violence. I invoke Gandhism, specifically, because his deontological ethics are evocative of the nuclear taboo. In addition to calling on these historical figures, the second and third juxtapose India with other states, saying that the use of nuclear weapons violates India's unique history as an advocate for global disarmament. The second explicitly mentions the U.S. and U.K,. Mentioning the only state to have used nuclear weapons and the one that colonized the subcontinent may serve to bolster nationalist claims that India has a unique moral stature. In both the first and second argument, there are appeals in the first-person plural. Evoking a conception of “we” is important because norms are inter-subjective. It is not sufficient for one person to hold a reservation about a given course of action, but it must be held among a group of people. The third argument does not include specific mentions of Indian historical figures or “we-ness,” but refers broadly to India as having been a responsible state and upholding moral leadership. 
+
+To measure how strongly the public supports nuclear weapons use, I include six different survey questions. In keeping with existing survey experiments, I ask respondents how strongly they approve of the nuclear attack as described in the vignette and how strongly they would prefer it to an alternative (here, continuing the ground war with Pakistan). Approval is the most direct way to measure whether someone supports nuclear use. Approval is also relevant to elected politicians fearful of domestic backlash and keen on limiting public opposition to their actions. Asking people whether they would prefer nuclear use to another military action is valuable because it reveals how strongly they have internalized just war theory. Whereas the nuclear attack described could not be defended under just war theory because of its failure to discriminate between combatants and civilians, as well as its lack of proportionality, the ground war would be defensible depending on the style and extent of combat, which is not described in the vignette. 
+
+In addition to asking for people's approval and preferences, I ask two questions regarding what material action they would take to punish or not punish the sitting government. Specifically, would they be more or less likely to vote for the ruling party, and how likely would they be to protest nuclear use? Similar questions have yet to be asked in extant survey experiments, but offer a more direct test of whether politicians would face reprimand for nuclear use than simply asking for public approval. Though approval is a useful measure of overall public support for a military action, it is only relevant to an election-seeking politician who believes that it will affect how people vote. If a given policy decision is widely unpopular but low salience, then it will have little effect on voting patterns. By contrast, if the reaction to an action is polarized but high salience, then it could either incentivize or disincentivize a politician from supporting nuclear use, depending on the distribution of voters who support it. 
+
+Lastly, I include measures of how moral respondents believe the attack to be. One of the questions asks directly whether respondents believe that the nuclear attack was ethical. Another asks whether they think it violates \textit{ahimsa}. These questions are useful insofar as they may reveal consequentialist reasoning. If a respondent believes that an attack is not moral but approves of it nonetheless, then that could imply they are willing to justify the attack based on the military and strategic benefits that it produces.
+
+All outcome variables are measured on seven point Likert scales, with respondents being given the option to select “don't know.” If I were to find evidence to substantiate my hypotheses, I could observe two different, potentially compatible, patterns in people's responses. On one hand, support for nuclear use could decline across the seven point Likert scale. In this scenario, people's support for nuclear use changes with little difference in the number of survey takers reporting that they don't know how to respond. In another scenario, the incidence of people reporting that they don't know how to respond could increase while the number of people supporting the attack decreases. In this case, the treatments convert people into fence-sitters. Instead of being in favor of military action, they are unsure of how to respond. To account for this possibility, I run all of my analyses twice. In one case, I exclude all NA observations; in the other, I impute values for people who say “don't know,” placing them in the middle of the Likert scale for each of the my outcomes.
+
+To gauge the extent of public support for nuclear use, I create an index using inverse covariance weighting that represents respondents' cumulative opposition to nuclear use \citep{anderson_multiple_2008}. To create this index, I use the public's approval of the attack, whether it would affect how they vote, and whether they would publicly protest it. I group these factors together because they are indicative of how strongly a politician would be sanctioned for nuclear use. Creating such an index is useful to my study both practically and theoretically and is an innovation on previous scholarship evaluating the taboo. ICW is useful practically because it enhances statistical power and reduces the number of tests that I run, minimizing the multiple comparison problem. Theoretically, ICW is useful because an election-seeking politician will weigh several aspects of public opposition to a nuclear attack when deciding whether to conduct one—not strictly, for example, public disapproval of the attack or whether people would protest it. As a result, though ICW does not provide an easily interpretable outcome variable, the index is holistic and provides insights into the different possible sources of opposition to nuclear use. 
+
+Previous experimental research on the taboo has not taken this approach, preferring to measure average treatment effects by looking at how treatments alter overall approval of nuclear use or people's preference for an alternative. This existing approach, I believe, both understates the degree of public opposition to norm-breaking behavior and mischaracterizes Tannenwald's initial theorizing on the taboo. Should it be the case, as \citet{sagan_revisiting_2017} found, that there is no meaningful difference between the percentage of people who would approve of a nuclear attack that killed one hundred thousand versus two million Iranian civilians, then how does the increased number of casualties affect the strength of opposition among the minority? Would it cause more people to protest, vote against the government, and otherwise politically punish the U.S. president for launching such a destructive attack? Irrespective of whether a majority of people would approve of the attack, if there is a high willingness among a meaningful subset of the total population to punish the sitting government, then domestic political opposition could be a constraint on norm-breaking behavior. An index-based approach is in-keeping with Tannenwald's initial theorizing on the taboo because she locates the strength of public opposition to nuclear use not only among the sheer number of people who would disapprove of it but also in the grassroots anti-nuclear movements that helped to animate people's moral revulsion. Based on these benefits of an index-based approach, I estimate the following OLS model as the primary means to evaluate hypotheses two through four:
+
+\begin{equation}
+Y_i=\alpha+\beta_1Identity_i+\beta_2NFU_i+\beta_3(Identity_i*NFU_i)+\beta_{party}+\mathbf{\delta'X_i} +\epsilon_{i},
+\end{equation}
+
+\noindent
+where $i$ indexes respondents, $Y_i$ represents composite attitudes toward nuclear use, $\beta_1$ is the fixed effect of reading identity-based arguments, $\beta_2$ is the fixed effect of telling respondents about India's NFU, $\beta_3$ is the fixed effect of the interaction between both treatments, $\beta_{party}$ is a block fixed effect for party, and $X_i$ is a vector of LASSO-selected individual-level covariates, including gender, religion, age, education, and whether someone is from a state that borders Pakistan. $Y_i$ is constructed such that the higher values reflect stronger opposition to nuclear use.
+
+Although the above model is useful for gauging whether my treatments have an effect on public opposition to nuclear use in the manner that I expect, it has several limitations. Most notably, it cannot be used to evaluate my first hypothesis. To determine whether the public has a categorical aversion to nuclear use, we must look at the sheer magnitude of support in the control group. I do so by collapsing responses to the six measures of my outcome into three categories: support, indifference, and opposition. I reduce my outcomes into three categories instead of two because indifference does not complement arguments either that there is a taboo against nuclear use or that people are particularly receptive to it. As a result, to generate a descriptively accurate assessment of public opposition to nuclear use, I do not group indifference with either approval or disapproval of the attack.
+
+Second, even though ICW is a useful way to create a composite score for support of nuclear use, it weights different measures in a manner that's theoretically arbitrary. To be sure, factor analysis or another means of creating a composite score for public opposition to nuclear use would struggle from the same problem. Because different leaders would not weigh different sources of public opposition to nuclear use in the same manner, any particular weighting system that researchers impose would not universally apply. That is to say nothing of the fact that because ICW and factor analysis do not produce easily interpretable results, they would not be useful for political elites deciding whether to use nuclear weapons. 
+
+I account for these problems in two ways. First, to test the robustness of my findings, I implement principal component analysis (PCA). Although this approach does not resolve issues regarding the interpretability of my outcome variable, it will show whether my treatments are still statistically significant using a different weighting scheme, reducing concerns that any statistically significant finding is attributable to one configuration of my composite outcome. Second, I estimate a series of linear probability models, in which I dichotomize every outcome variable such that indifference to and disapproval of the attack are grouped together. Regressing each outcome on my variables is useful because ICW and PCA are “black boxes.” That is to say, it is not clear which measures of my outcome are being up- or down-weighted. By breaking apart respondents' answers across each of my outcomes, I evaluate how my treatments affect each type of opposition distinct from one another. Although this approach raises the problem of multiple comparisons, it reduces concerns regarding the theoretical arbitrariness of using any given weighting scheme. As a result, by evaluating the effects of my treatments on both indices and those indices' constituent parts, I am able to use one approach to account for the deficiencies of the other. In the appendix, I include further robustness tests.
+
+To conduct my experiment, I use Prolific to recruit four hundred participants to fill out a survey on Qualtrics. I select Prolific primarily for its ease of use compared to other survey platforms.\footnote{I initially planned on recruiting participants via Amazon MTurk, which would have enabled me to acquire a larger sample. However, due to last minute difficulties with MTurk's customer service team, I opted for Prolific.} Being cheap to recruit respondents, Prolific enables me to gain enough statistical power to adequately test the hypotheses that I proposed above. That being said, online surveys in India are rarely representative of the population. In India, online samples are disproportionately young, male, upper-caste, and wealthy \citep{boas_recruiting_2020}. In an effort to account for some demographic differences, I weight my sample by gender and age. That said, by virtue of having such an unrepresentative sample, there is only so much that balancing can correct for. Furthermore, because my survey is conducted in English, it cannot reasonably be construed as representative even after weighting. Because English is most widely spoken among people who are well educated, my findings will likely only apply narrowly to upper-class, elite opinion. 
+
+Having an upper-class sample has both benefits and drawbacks. Assuming that people who are better educated are more norm sensitive, an elite sample may constitute a most likely case to observe a widespread normative aversion to nuclear use. Should a taboo not exist in my sample, then it may be less likely to exist more broadly. Likewise, given how well educated English-speaking people are on balance, people may know more about Indian history and foreign policy than the median voter, meaning that identity-based appeals could be more salient than they otherwise would be. In spite of this potential benefit of an elite sample, it is nonetheless not ideal. If we are concerned with the absolute magnitude of public opposition to nuclear use—and whether that opposition would manifest in people protesting or voting against the government–then it is important that we know how people beyond the upper crust think. However, based on the nature of online surveys in India and this survey being conducted in English, we cannot confidently draw conclusions about Indian public opinion writ large.
+
+\section{Results}
+The discussion of my results proceeds in six parts. First, I consider how strongly the anti-nuclear norm is rooted in India and whether it plausibly constitutes a taboo. Second, I evaluate the effects of my treatments on public attitudes toward the counterforce attack using ICW. Third, I break down the effects of my treatments on each of the components of my indices, and fourth, I consider heterogeneous effects, minding the possibility that treatments' effects are conditional on their prior political beliefs. Fifth, I test whether the identity treatment was effective in changing people's attitudes toward nuclear weapons use and state identity, and sixth, I describe the robustness tests that I include in the appendix.
+
+Ultimately, I find that a counterforce attack would polarize respondents in a manner that is not consistent with scholarship on the taboo. That said, while there is apparently no universally internalized opposition to nuclear use, there would be substantial pushback against it nonetheless, with opposition being especially strong among those who do not support the BJP. Pertaining to conceptions of state identity, I find little evidence that it mediates respondents' support for nuclear use. In no regression model is the effect of identity-based arguments statistically significant, and despite a vast majority of respondents saying that the counterforce attack would violate Indian identity, many people still support it nonetheless. Lastly, I find that informing respondents of India's NFU meaningfully reduces public support for nuclear use. 
+
+\textit{A Taboo?} As shown in \autoref{fig:control-taboo}, slightly fewer than half of respondents in the control group (45\%) approved of the attack, compared to 43\% who disapproved of it outright.\footnote{For comparison to treatment conditions, see Figures~\ref{fig:figure-a1}--\ref{fig:figure-a3}.} Though this difference is not statistically significant, it is notable that the public is neither staunchly supportive of nuclear use, like \cite{sagan_revisiting_2017} found, nor that people are overwhelmingly opposed to it either, as proponents of the taboo might expect. If we look at measures of support aside from immediate approval, we find that attitudes toward nuclear use are similarly fractured, with people both willing to sanction and reward the government for resorting to it.
+
+
+
+For election seeking politicians, two of the most important sources of opposition are whether it would cause people to protest the attack or vote against the government. Surprisingly, in the control group, more respondents say they would be at least somewhat likely to protest the attack (50\%) than those who say they would somewhat disapprove of it.\footnote{This difference holds even after respondents who fail comprehension checks are removed. With my sample being small, this observed difference could be aberrational, or it could be the consequence of question ordering, with opposition to nuclear use consolidating as people continue to answer questions. That said, if question ordering were important, I would expect that people's stronger opposition to nuclear use would also be expressed in their voting tendencies, which it is not.} Thirty seven percent of respondents, meanwhile, said that they would be at least somewhat less likely to vote against the sitting government. Considering that people's stated opposition to nuclear use may not actually manifest in tangible opposition, these data should be interpreted cautiously. Subsetting respondents based on the strength of their belief,  20\% of people said that they would be very likely to protest nuclear use and much less likely to vote for a government that resorts to it. That so many people would strongly consider protesting is especially pertinent because of how far it exceeds the thresholds that comparative politics researchers have found to be pivotal in generating policy or regime change \citep{chenoweth_physics_2019}. If stated opposition to nuclear use were to result in a sustained protest movement, it could make nuclear use extremely costly for the government. Having said that, so much as nuclear use could generate opposition to a government, it could also engender support for it. Twenty percent of respondents said that the nuclear attack would make them much more likely to vote for the sitting government, offsetting the number of people who said the reverse. That such a substantial number of people would be willing to electorally reward the government suggests that there may be a contained rally effect, in which nuclear use elicits an upswell of support for the sitting government among a subset of the total population.
+
+
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=1.25\textwidth, angle=90]{Figures/1_approve_prefer.pdf}
+    \caption{ }
+    \label{fig:control-taboo}
+\end{figure}
+
+With possible logical inconsistencies in people's tendency to protest nuclear use aside, these data suggest that a government would face a starkly polarized public response to nuclear use. Unsurprisingly, given Sagan and Valentino's earlier research in the U.S., the difference in support for nuclear use has a strong partisan valence. Supporters of the BJP are much more in favor of nuclear use than either supporters of Congress and those that disapprove of both parites.\footnote{See \autoref{tab:ols-main-effects}.} Among the twenty people in the control group who said that they would be much more likely to vote for a sitting government that uses nuclear weapons, sixteen of them were BJP supporters.\footnote{Across all treatment and control groups, of the fifty seven people who said that they would much more likely to vote for a sitting government that uses nuclear weapons, fifty one of them were supporters of the BJP.} This finding is in keeping with the BJP's history of having a hyper realist foreign policy and different BJP governments' support for a more hawkish nuclear doctrine, as epitomized by Vajpayee's authorization of testing \citep{bajpai_indian_2014}. 
+
+In total, the effect that nuclear use would have on a government's likelihood of survival in the next election is ambiguous and difficult to gauge. If the Indian National Congress is in power, it may suffer among those who currently make up its base. That said, whether it would in turn attract sufficient support from supporters of the BJP to compensate is unclear. Likewise, if a BJP government were to authorize the use of nuclear weapons, it may bolster support among its base but repulse potential swing voters in a combination of effects that could prevent it from winning power. Based on the available data, attempting to predict whether nuclear use would bolster or limit a sitting government's support is foolhardy. However, the apparent uncertainty of the political implications of nuclear use casts doubt on the argument that there is a widespread, categorical aversion to it. Despite India's lengthy tradition of prime ministers and other political elites being among the staunchest proponents of disarmament in the world, substantial portions of people are not only willing to approve of the government's actions but reward elected officials part of it. 
+
+Beyond these data questioning whether the norm against nuclear use constitutes a taboo, Figure 1 also reflects that the morality of nuclear use may not be a preeminent concern for respondents. As Nina Tannenwald theorizes, the nuclear taboo should be propagated by people find nuclear use to be morally repulsive. To be sure, such a moral revulsion apparently exists. More than half of respondents believe that the counterforce attack would be unethical. However, many respondents who said that the attack was immoral would also approve of it. This discrepancy suggests that while people may be opposed to nuclear use in principle, that principle is not deontological and can be overridden by other factors.
+
+\textit{Treatment Effects} Table 1 displays the results of Equation (1), in which I regress respondents' composite attitudes toward nuclear use on my treatments, block fixed effects for party, and a vector of LASSO-selected covariates. The inverse covariance weighting index is meant to approximate the domestic political sanction that a leader would face for nuclear use, being made up of overall approval for nuclear use, how people would vote in response to it, and how likely they would be to protest the use of nuclear weapons. The index is \textit{z}-standardized, meaning that coefficients are interpretable as the change in standard deviations that an input generates. To gauge whether the treatments are substantively significant, we can compare their effect to those of covariates included in the model, especially party which I expect to be strongly predictive of support for nuclear use based on similar findings in the U.S,.
+
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Estimated Effects of NFU and Identity on Composite Nuclear Attitudes},
+label={tab:ols-main-effects},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Note: Robust HC2 standard errors in parentheses. Block fixed effects for party and a LASSO-selected covariate for religion included. Take people who do not support either the BJP or INC as the baseline. Midpoint imputation is used. Respondents who fail comprehension checks are not dropped.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[0.33\textwidth]Q[0.33\textwidth]},
+hline{2}={1-2}{solid, black, 0.05em},
+hline{16}={1-2}{solid, black, 0.05em},
+hline{1}={1-2}{solid, black, 0.08em},
+hline{19}={1-2}{solid, black, 0.08em},
+column{2-3}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& ICW \\
+Identity & \num{0.060} \\
+& (\num{0.167}) \\
+NFU & \num{0.535}*** \\
+& (\num{0.154}) \\
+NFU x Identity & \num{-0.255} \\
+& (\num{0.234}) \\
+BJP & \num{-0.502}** \\
+& (\num{0.172}) \\
+INC & \num{0.209} \\
+& (\num{0.174}) \\
+Not Hindu & \num{0.385}** \\
+& (\num{0.148}) \\
+Constant & \num{-0.051} \\
+& (\num{0.183}) \\
+Num.Obs. & \num{415} \\
+R2 & \num{0.237} \\
+R2 Adj. & \num{0.226} \\
+\end{talltblr}
+\end{table} 
+
+The first row in Table One corresponds to my second hypothesis. When people are exposed to identity-based arguments opposing nuclear use, opposition to it increases by 0.06 sd on the ICW index. This effect is neither statistically nor substantively significant. If compared to demographic factors, including the effect of party and religion, that of the identity treatment is dwindlingly small. The lack of both statistical and substantive significance implies that invoking India's identity as a “responsible” nuclear weapons states does not meaningfully increase opposition to nuclear use. In an ensuing section, I will discuss the non-effect of this treatment in more depth.
+
+Regarding my third hypothesis, that being primed about India's NFU would reduce public support for nuclear use, I find compelling evidence to substantiate it. With a \textit{p}-value less than 0.001, being recently informed that India has an NFU expands public opposition to nuclear use by a considerable margin, with more than a 0.5 sd increase in the index. The magnitude of this effect size is greater than that of supporting the BJP as compared to neither of India's two main parties. Meanwhile, it exceeds the effect of a respondent being Hindu versus not. This finding is notable because it suggests that 1) adequately informing people about the institutionalization of non-use can provoke a substantial change in their attitudes toward nuclear use, and 2) Indian leaders would pay domestic audience costs for reneging on their declaration of no first use. As I discussed earlier and will elaborate on in the conclusion, the latter implication confers NFUs with more credibility than they may otherwise have.
+
+Lastly, I hypothesized that the effects of being told that India has an NFU would reaffirm the effects of identity-based arguments, leading to greater overall opposition to nuclear use than either treatment alone. There is no evidence to substantiate this hypothesis. While not statistically significant, the coefficient of the interaction term is negative (-0.255 sd). Taken together, the results from my OLS models suggest that while priming people with identity-based arguments does not meaningfully strengthen opposition to nuclear use, knowledge of the institutionalization of non-use does. 
+
+\textit{Constituent Items} My primary dependent variable of interest is the weighting scheme I created. ICW has several benefits both theoretically and statistically for the sake of the project, including improving power and reducing issues of multiple inference. Nonetheless, the questions comprising this index are substantively interesting. As a result, I estimate average treatment effects using linear probability models in which I dichotomize every measure of support for nuclear use, such that disapproval of and indifference to the attack are grouped together.  In estimating these models, I include controls for party and religion. \autoref{fig:figure-2} shows the effects of each treatment on the components of my indices.
+
+Regarding the identity treatment, three of the six outcomes are slightly greater than zero but not by a statistically significant margin. These include overall approval of the attack, whether people think it would be unethical, and whether nuclear use would make them more likely to vote against the government. The outcome measuring whether people think the attack violates \textit{ahimsa} is greater than zero by a statistically significant margin. Exposing people to the treatment arguments triggers a fifteen percentage point decrease in people who think that the attack does not violate Ahimsa. That this outcome is the only one substantially affected by the treatment is noteworthy because during the nationalist movement, Gandhi successfully politicized a deontological interpretation of \textit{ahimsa}. Not only was it a religious and moral mandate, but it also amounted to a strategy for anti-colonial resistance. After the testing of nuclear weapons, Gandhi argued explicitly that nuclear weapons and deterrence were inconsistent with \textit{ahimsa}. Given this history, it follows logically that prompting respondents to consider Gandhi and others' historic support for non-violence would in turn lead them to say that the attack violates \textit{ahimsa}. That said, even if this is the case, the treatment arguments do not have an affect on any of the outstanding measures of support, implying that increased sensitivity to the attack violating \textit{ahimsa} does not translate to tangible opposition to nuclear use.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1.4\textwidth, angle=90]{Figures/1_dot_whiskers.pdf}
+    \caption{ }
+    \label{fig:figure-2}
+\end{figure}
+
+Pertaining to the NFU treatment, I find that across the board opposition to nuclear use increases when respondents are told that India has a no first use policy. Although the effect is only statistically significant for the protest outcome, the substantive effects of it on whether people approve of it and think that it is unethical and violates ahimsa is considerable. In each case, opposition to nuclear use increases by approximately ten percentage points. Irrespective of the statistical significance of any individual term, the uniformly positive effect that the NFU treatment has (and the substantial effect that it has for select outcomes) confirms our findings in Table 1 that informing people about India's NFU strengthens cumulative opposition to nuclear use.
+
+Lastly, the constituent items offer no evidence that the combined effect of identity-based arguments and informing people of India's NFU strengthens opposition to nuclear use beyond the individual effect of each treatment. The sign of the interaction term is inconsistent across measures of opposition to nuclear use, with it being negative for four of them and positive for two. In no case is the interaction term statistically significant. This finding casts yet further doubt on my initial expectation that being told of India's NFU would strengthen arguments that nuclear use is antithetical to state identity.
+
+\textit{Heterogeneous Effects} To fully understand the scope of how the above treatments affect nuclear use, I consider the possibility that their effect is conditional on party. That is to say, insofar as informing people about India's NFU prompts opposition to nuclear use, is that bump only reserved for those who support the BJP, Congress, or neither party? Likewise, if identity based arguments have no effect in the population writ large, do they have counter-veiling effects among people who support different parties? To answer these questions, I repeat Equation (1), interacting the treatment effects with party. Earlier research argues that the most salient arguments against nuclear use are those that people likely have not already internalized \citep{sagan_atomic_2024}. Assuming that the same logic holds for identity, I would expect that the effect of the arguments would be greater for BJP supporters than Congress supporters because the BJP has historically more strongly supported nuclearization, implicitly diminishing the salience of arguments that Indian identity is incompatible with nuclear weapons use.
+
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Heterogeneous Effects, Treatments Conditional on Party},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Robust HC2 standard errors in parentheses. 
+    Covariate for religion included but not shown. 
+    Midpoint imputation used; respondents who fail comprehension checks are not dropped.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[0.33\textwidth]Q[0.33\textwidth]Q[0.33\textwidth]},
+hline{2}={1-3}{solid, black, 0.05em},
+hline{20}={1-3}{solid, black, 0.05em},
+hline{1}={1-3}{solid, black, 0.08em},
+hline{23}={1-3}{solid, black, 0.08em},
+column{2-3}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& ICW \\
+NFU & \num{0.296} \\
+& (\num{0.221}) \\
+Identity & \num{-0.141} \\
+& (\num{0.220}) \\
+NFU x Identity & \num{-0.216} \\
+& (\num{0.182}) \\
+BJP & \num{-0.672}*** \\
+& (\num{0.194}) \\
+INC & \num{0.033} \\
+& (\num{0.170}) \\
+BJP x NFU & \num{0.192} \\
+& (\num{0.238}) \\
+INC x NFU & \num{0.237} \\
+& (\num{0.263}) \\
+BJP x Identity & \num{0.362} \\
+& (\num{0.240}) \\
+INC x Identity & \num{0.083} \\
+& (\num{0.282}) \\
+Num.Obs. & \num{421} \\
+R2 & \num{0.256} \\
+R2 Adj. & \num{0.238} \\
+\end{talltblr}
+\end{table} 
+
+In Table 2, I display treatment effects conditioned on party. Ultimately, the results do not meaningfully change our previous findings. The NFU treatment is no longer statistically significant, but this change is likely attributable to it now being conditioned on someone not supporting either of the two major parties. None of the interaction terms included in this model are statistically significant, implying that the treatments do not have a meaningfully different effect on people who support different parties. This finding limits concerns that the non-effect of the identity treatment in the sample writ large is attributable to a backlash in which one group of respondents responds positively to the treatment and the other negatively. 
+
+\textit{Treatment Effectiveness} Given the observed non-effect of the identity treatment, I consider whether my treatment actually changed people's belief that nuclear use is incompatible with Indian identity. To do so, I leverage a question in which respondents were directly asked whether they thought that a nuclear attack like that described in the hypothetical news article violates India's national identity. I regress the answers to this question across the seven point Likert scale on my treatments and covariates for party and religion. Table 3 displays these results.
+
+Before discussing the impact of each of my treatments, it is notable that in the control group, particularly among those that don't support the BJP, there is a strong belief that a counterforce attack would violate Indian identity. This finding is notable for the same reason that it was notable many respondents said that such a strike would be unethical. Despite people overwhelmingly saying that the attack would violate Indian identity, it does not coincide with people actually disapproving of nuclear use. The disconnect between these two findings suggests that identity may not be a relevant factor people consider in weighing the legitimacy of nuclear use.
+
+As can be seen in the first row, the effect of the identity-based appeals are not statistically significant. That said, the effect of the NFU treatment is not only statistically significant but substantively so, with informing people of India's NFU amounting to a 0.65 step increase in opposition to nuclear use on the Likert scale. The discrepancy between the significance of each of these treatments is notable because it suggests that people's perceptions of state identity are malleable but not by short, identity-based appeals, like those I used in my treatment. Of course, the non-effect of the identity treatment could be attributed to the arguments not being persuasive, whether because of their actual content, the method in which they were presented, or other factors. I discuss possible weaknesses of my experimental design more in my conclusion.
+
+That informing people of India's NFU has a statistically significant effect on identity is also notable in its own right. Constructivist scholars have long-considered the institutionalization of norms to be a crucial means through which they are propagated, strengthened, and ultimately ingrained in actor identity. Though scholarship has largely focused on how international institutions alter states' conceptions of inter-subjective identities—such as what it means to be a “liberal” state—these data suggest that domestic institutions are also a powerful means to shape how people perceive the interaction between state identity and morally urgent foreign policy issues. Whether or not this altered conception of national identity is the factor informing stronger opposition to nuclear use more generally, however, is a question unto itself and not one that these data can answer. Other considerations, such as a general respect for the rule of law or stated doctrine, also plausibly explain why being told of India's NFU strengthens opposition to nuclear use.
+
+
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Estimated Effects of NFU and Identity on Perceptions of State Identity},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Robust HC2 standard errors in parentheses. 
+    Midpoint imputation used. Respondents who fail comprehension checks are not dropped.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[0.33\textwidth]Q[0.33\textwidth]},
+hline{2}={1-2}{solid, black, 0.05em},
+hline{16}={1-2}{solid, black, 0.05em},
+hline{1}={1-2}{solid, black, 0.08em},
+hline{19}={1-2}{solid, black, 0.08em},
+column{2}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& Likert Scale \\
+Identity & \num{0.240} \\
+& (\num{0.350}) \\
+NFU & \num{0.651}+ \\
+& (\num{0.343}) \\
+NFU x Identity & \num{-0.579} \\
+& (\num{0.466}) \\
+BJP & \num{-0.629}+ \\
+& (\num{0.342}) \\
+INC & \num{0.734}+ \\
+& (\num{0.435}) \\
+Not Hindu & \num{0.303} \\
+& (\num{0.291}) \\
+Constant & \num{4.768}*** \\
+& (\num{0.381}) \\
+Num.Obs. & \num{421} \\
+R2 & \num{0.150} \\
+R2 Adj. & \num{0.138} \\
+\end{talltblr}
+\end{table}
+
+
+\textit{Demographics} Although this paper is primarily concerned with theorizing on the effects of state identity and institutionalization, given that it is among the first surveys testing Indian respondents' attitudes toward nuclear weapons use, I also evaluate how support for nuclear weapons use differs on the basis of demographic factors. As mentioned previously, this survey amounts to an elite sample when it comes to caste, income, and education. Due to a lack of variation across these factors, I do not discuss them here. That said, there is sufficient difference in gender and religion to reasonably test differences in support for nuclear use across these factors. 
+
+As it pertains to gender, scholars regularly find in public opinion research that women are more pacific than men. However, when it comes to nuclear weapons use, this regularity breaks down. In their original \textit{Hiroshima in Iran} study, Sagan and Valentino found that gender had no meaningful effect on attitudes toward nuclear weapons use. Here, I find the same to be true, with the gender of respondents not having a discernible effect on composite attitudes toward nuclear weapons use when it is included as a term in my OLS models (see \autoref{tab:all-control-midpoint} in the appendix). This finding apparently coheres with historical polling in India on nuclear weapons. When the United States Information Agency (USIA) asked respondents whether they believed that India should preserve its nuclear option in 1994, there was no distinguishable difference between the percent of women and men who believed that it should.\footnote{92\% of men agreed that India should retain its nuclear option without global disarmament compared to 93\% of women. See the appendix for further discussion.} Sagan and Valentino do not offer an explanation for why this gender difference exists, nor do I attempt to provide one here. Rather, these findings bolster Sagan and Valentino's by suggesting that gender's lack of an effect on attitudes toward nuclear use persists across states.
+
+While gender has no effect on nuclear weapons use, religion has a compelling effect. In my primary OLS model, displayed in figure one, people who did not identify as Hindu opposed nuclear use by about 0.385 sd (\textit{p} \textless 0.01) more than those who did.\footnote{This point estimate is virtually identical when including all control variables, see \autoref{tab:all-control-drop-midpoint} in the appendix. Using PCA in robustness checks, religion varies between being statistically significant at the 0.05 and 0.1 levels.} This finding is notable for two reasons. First, to my knowledge, no previous scholarship focusing on Western countries has asked respondents for their religion. Several have asked respondents about how religious they are, but not what faith they actually practice.\footnote{See experimental materials for \cite{press_atomic_2013}, \citet{sagan_revisiting_2017}, \citet{dill_kettles_2022}, and \cite{schwartz_when_2024}.} The lack of study in this regard is an oversight because of how conflicts, even in secular states, are inflected with religious overtones specific to one faith. Though he has assumed his cabinet post since much of the research on nuclear use has been conducted, take Secretary of Defense Pete Hegseth's justification of American intervention in Iran in 2026 as one example. Invoking Christian divinity, Hegseth ascribes to the conflict a religious motivation that likely does not resonate, and may even turn off, people who do not share the same faith. Even without priming, religion may be salient factor affecting support for nuclear use in existing survey experiments many of them use adversaries–such as Iran or terrorist groups—that are widely associated with being of a religious out-group, namely Islam.\footnote{In their appendix, \citet{dill_kettles_2022} describe a test in which they vary whether a nuclear attack was launched against an unidentified Libyan city or an explicitly Christian one. They found no difference in the degree of support across Western countries on the basis of target. That said, they did not include a control for the religion of the respondent. This absence leaves open the question of whether Western Christians would be more averse to launching the attack against explicitly Christian civilians.} As such, individual respondents' support for nuclear use may be in part conditional on how strongly they identify with civilian Muslims who would likely die in an attack.
+
+Secondly, the salience of religious identity in India is notable because of the emergent saffronization of Indian foreign policy. Saffronization refers to the process through which Hindu nationalism is incorporated into Indian public policy. As it manifests in foreign policy, saffronization takes the form of reforms to the Indian Foreign Service, the incorporation of Hindu religious practice into Indian soft power, and targeted attacks against Sikh separatists living in Canada and the United States \citep{huju_saffronizing_2022, mukherjee_hindu_2024}. It is also apparent in the terminology that political elites use to name conflicts. In May 2025, India referred to its military action against Pakistan as Operation Sindoor, with sindoor being a red powder that married Hindu women wear on their forehead. Notably, however, religious differences have not always been manifest in public opinion. In the 1994 USIA poll, attitudes toward preserving India's nuclear option and the NPT differed on the basis of religion, but Hindus were not more pro-nuclear than all other religious groups (see Table A14). Rather, Christians were more strongly in favor or joining the NPT while Sikhs were less strongly in favor of doing so. There was no meaningful difference in opinion between Hindus and Muslims.
+
+\textit{Robustness}  Returning to the hypotheses that I posit in this paper, I conduct a series of robustness tests to gauge whether the (non-)effects of my treatments are consistent. First, I consider whether the significance of my treatment terms are an artifact of the weighting scheme that I created using ICW. Although I have already partially addressed this concern by looking at the constituent items of my indices, I implement principal component analysis to ensure that the (in)significance of my terms holds using a different weighting scheme. As mentioned in my research methods section, the index created via PCA is meant to represent people's holistic aversion to nuclear use. Like the ICW index, it includes whether people would approve of the counterforce attack, protest it, and vote against the sitting government for launching it. It also incorporates whether people think that nuclear use is ethical, if it would violate \textit{ahimsa}, and whether they would prefer nuclear use to continuing the ground war. Beyond using a different weighting scheme, I also compare the effects of using NA imputation compared to midpoint imputation for people who respond “don't know” to outcome questions. Likewise, I evaluate how my estimates differ when I drop respondents who fail comprehension checks. The results for using PCA, different weighting schemes, and dropping procedures are displayed in Figures~\ref{tab:tab-a1}--\ref{tab:tab-a3}. As can be seen, the significance of my central treatments does not change on the basis of any of these differences. The NFU treatment is still significant, and neither the identity nor interaction terms are so. Likewise, the demographic effects of party and religion are still significant in the manner described previously. In addition to the above robustness tests, I also regress my indices on all of the control variables that I collected as part of my survey (See Tables \ref{tab:all-control-midpoint} and \ref{tab:all-control-drop-midpoint}). Beyond party, religion, and gender, additional controls that I include are age, education, and whether someone lives in a state that borders Pakistan.
+
+In addition to the models already described, I run a series of linear probability models, in which I dichotomize each of the outcome variables along each step of the Likert scale. That is to say, I group respondents based on whether they selected 1 versus 2-7, 1-2 versus 3-7, and so on and so forth for each of the questions that I pose to respondents. Doing so, I gauge whether my treatments have different effects over different thresholds of support for nuclear use. The results from these regression models are displayed in Tables \ref{tab:ahimsa-threshold}--\ref{tab:vote-threshold}. Across models, the NFU treatment consistently has the same effect as previously described. It increases opposition to nuclear use, irrespective of any given threshold on the Likert scale. Though this effect is not always statistically significant, it does not have a persistently stronger effect on one side of the scale compared to the other. 
+
+Regarding the identity treatment, there is some, albeit inconsistent and weak, evidence to suggest that it may increase opposition to nuclear use among those who most strongly support it. Vacillating between being statistically significant at the 0.1-level and not,\footnote{With the exception of its effect on voting patterns, for which it is significant at the 0.01 level.} this effect could be aberrational, but if it were to bear out as significant in a larger sample, then it would lend support to Sagan and Valentino's expectation that arguments would be most effective among those who may not have already internalized them. That said, even if this effect were to prove significant, it would not be that meaningful because it would imply that people move from being strongly supportive of nuclear use to simply supportive of it. This difference is one of degree rather than character and should not bolster our confidence that identity-based primes can elicit a strong aversion to nuclear use. This is especially true when we consider, that while not statistically significant, the effect of the identity-based primes usually reduces support for nuclear use when people are already opposed to it.
+
+Moreover, our confidence in the ability of identity-based primes to reduce support for nuclear use should be tempered by the consistently significant finding that the combined NFU and identity treatment \textit{reduces} opposition to nuclear use among respondents who most strongly support it. This result is counterintuitive because each treatment independently increases opposition among the same subgroup. One possible explanation is that the combined treatment generates a backlash effect: respondents who perceive a strong normative cue against nuclear use may react against it and express stronger approval.
+
+\section{Conclusion}
+
+Constructivist scholars in international relations have long theorized that identity is a salient factor impacting states' foreign policies. Not only do actors weigh whether a given action produces strategic benefits, but also whether the morality of that action coheres with their sense of self. Despite scholars accumulating an impressive amount of qualitative evidence to substantiate this argument, there has been relatively little quantitative scholarship that does the same. In this paper, I sought to redress this gap by building on recent survey experiments showing that Western public opinion is far more receptive to the use of nuclear weapons than previously thought. I do so by fielding an experiment, in which Indian respondents are exposed to identity-based arguments opposing a counterforce attack against Pakistan.
+
+Ultimately, I find little evidence to suggest that there is either a taboo against nuclear use in India or that identity-based arguments meaningfully change public support for it. On the first count, a counterforce nuclear attack would polarize Indian public opinion in a manner that is not consistent with scholarship on the taboo. Instead of there being a categorical aversion to nuclear use, a large minority of people—especially those supportive of the BJP–would both approve of the attack and electorally reward the government for resorting to it. That said, nuclear use would provoke staunch opposition in a manner that previous experimental scholarship has not found. With substantial portions of people saying that nuclear use would both cause them to protest the attack and be more likely to vote against the government, the electoral implications of nuclear use could plausibly be a restraint on it, depending on what party is in power. These findings nuance previous experimental scholarship on the taboo by shedding light on the political repercussions of nuclear use, and not simply the extent of public approval.
+
+As it pertains to the effects of identity-based arguments, I find little evidence that they bolster public opposition to nuclear use. Presenting respondents with arguments that India's identity is incompatible with nuclear use did not even change their belief that the two are, in fact, incompatible, much less total support for a counterforce attack. My data cast further doubt on the salience of identity in mediating support for nuclear use by showing that, while a compelling majority of respondents believed that a nuclear attack would violate Indian identity, many of them are still approving of it.
+
+While the identity-based primes proved ineffective in diminishing support for nuclear use, informing respondents of India's no first use policy substantially increased opposition to it. This finding coheres with constructivists' argument that the institutionalization of norms bolsters them; however, it focuses on a different type of institutionalization than most constructivists have discussed. Instead of highlighting how international institutions can concretize norms, it highlights how domestic ones can do the same. In this paper, I do not intend to advance a given conclusion for why informing people of India's NFU bolsters opposition to nuclear use. Though I initially expected (and find evidence) that being told of India's NFU reinforce people's perceptions of state identity as being antithetical to nuclear use, I am skeptical that this factor in turn mediates overall opposition to nuclear use. Given identity's lack of effect, as previously discussed, I am inclined to think that other factors, such as a reflexive respect for the rule of law, may better explain the effectiveness of NFUs in curbing support for nuclear use. 
+
+That a no first use policy considerably strengthens domestic opposition to nuclear use has both important theoretical and normative implications. Firstly, it suggests that declaring an NFU can confer domestic audience costs should a state violate it.\footnote{It is important to note that India's no first use policy is simply stated doctrine. It is not passed law and there is no means through which a prime minister could be immediately removed from office, imprisoned, or otherwise reflexively punished for violating it. That said, the government could, of course, be felled by a vote of no confidence.} That an NFU makes nuclear use costly is important because credible commitments are those that are costly to renege on \citep{fearon_domestic_1994}. If an adversary believes that India's NFU could limit an election-seeking politician's ability to retain office should they resort to nuclear use, that adversary may have more faith that India would not launch a preventive first strike attack. With their confidence in Indian non-use strengthened, they would, in turn, be less incentivized to launch a first-strike attack against India. In this regard, declaring an NFU could stabilize deterrence in the subcontinent.\footnote{The corollary to this argument is that India \textit{renouncing} its NFU could undermine the stability of deterrence. If NFUs were actually cheap talk, then renouncing it would not meaningfully affect adversaries' perception of the likelihood of nuclear use. However, if adversaries believe that declaring an NFU could make nuclear use more costly, then renouncing it could be perceived as a government trying to inoculate itself against the political backlash that would be incurred by first use. In this case, renouncing an NFU could more strongly incentivize an adversary to preempt.}
+
+There are, of course, limits on the degree to which declaring an NFU may meaningfully alter adversaries' perceptions of India's likelihood to use nuclear weapons. If a prime minister, for example, were not election seeking but instead motivated by a genuine desire to protect Indian security, then the domestic political repercussions of nuclear use would be immaterial. Likewise, a government that resorts to nuclear use would also likely be one in crisis and perhaps not sensitive to domestic political backlash. It may have declared a state of emergency, suspended elections, and limited people's ability to protest. In this event, there would be no means through which citizens could express their discontent with a government, and any political costs would only be incurred if and when elections and public assembly return—at which point opposition to nuclear use may be less organized. In sum, though NFUs confer domestic audience costs, the degree to which these costs alter an adversary's perceptions of their credibility is unclear and not something that this study attempts to elucidate.\footnote{See \citet{talmadge_when_2024} for more discussion of why NFUs' domestic political costs would likely be inconsequential.}
+
+In terms of the implications that this project bears on future research, there are several. First, I would encourage scholars to consider why NFUs are so potent in shaping public attitudes toward nuclear use. Though I initially offered the explanation that NFUs reinforce people's perception of identity as being antithetical to nuclear use, I am now skeptical that this is the case, as previously mentioned. Evaluating what alternative factors could result in such a strong effect is important to understanding whether and how declaring an NFU outside of the Indian context could possibly strengthen public opposition to nuclear use.
+
+Secondly, I would encourage international relations scholars to more carefully consider how identity manifests in public opinion research. Up to now, scholars have extensively studied whether properly educating respondents on international law can reduce support for norm-breaking behavior. However, to my knowledge, research has not tested the underlying causal mechanism that international law reconstitutes people's understanding of what is appropriate behavior for a state actor with a given identity. Does international law actually inform what respondents believe a “liberal” or “civilized” state does? Up to now, constructivist scholars have wrangled with similar questions in qualitative scholarship, yet not in quantitative or experimental scholarship. Though public opinion research can only say so much about state behavior, considering that political elites are the ones who set policy, it nonetheless provides one approach through which the microfoundations of constructivist scholarship can either be reinforced or weakened. 
+
+Lastly, I would encourage scholars not to abandon the question of whether identity-based primes can alter support for nuclear use or other norm-breaking actions. Over the course of this project, I have developed several reservations about my experimental design that make me cautious about dismissing confidently that priming identity has no effect. First, my sample size is small, slightly more than four hundred respondents, potentially meaning that the non-effect of my treatment is attributable to my lack of data rather than the effectiveness of the treatment itself. Secondly, I did not scientifically test different identity-based arguments in a pilot experiment to determine which respondents found most persuasive. I chose arguments that attempted to appeal to Gandhi's categorical aversion to violence because they were most taboo-like in their nature. However, this emphasis on Gandhism obscures the variety of Indian political figures who have historically argued that nuclear use is incompatible with Indian identity and culture. If arguments, for example, were grounded not just in Gandhism but also appeals like Atal Vajpayee's to “ancient civilization,” how meaningfully might that increase opposition to nuclear use, especially considering that supporters of the BJP are less opposed to it? 
+
+Thirdly, I worry that respondents, correctly, assumed that the experiment was fielded by a Westerner due to a combination of factors.\footnote{Most notably, because of my own mistake, I included a banner for the Columbia University Institute for Social and Economic Policy Research on the Qualtrics interface that respondents used to answer the survey. Based on how well educated respondents are and the prominence of the institution, it is plausible that respondents are aware of Columbia and its location in the U.S. Secondly, given that the survey was conducted in English with no option to take it in Hindi, Bengali, or another widely spoken Indian language, people may have assumed that it was conducted by someone without any language skills. Lastly, respondents who read the consent form would have read that the experiment was fielded by “Wyatt King.”} Should respondents have thought that the survey was fielded by a Westerner, it may reduce the salience of the identity treatment because rather than the arguments amounting to the claim, “we don't do that,” they would imply “\textit{you} don't do that.” Aside from the pejorative nature of this sentiment to begin with, it is especially problematic in the context of Indian nuclear nationalism. With political elites often lodging the criticism that the West promotes “nuclear apartheid,” this survey could be taken as another example of that but in an especially insincere manner by attempting to impose a conception of Indian identity on Indians. Though some may dispute the degree to which online survey respondents are conscious of these features of the experimental design and the history of India's nuclear weapons program, it nonetheless stands that the risks induced by this possibility weakens my research design. In future scholarship, I would urge scholars to be more sensitive to this possibility than I was here.\footnote{It should not go without mention either that this possibility raises metascientific questions regarding who is best suited to conduct research on state identity and foreign policy. As an American and college student, I know very little about Indian identity, and I recognize that this project was, in part, a product of my own hubris in assuming that I could project my limited understanding of Indian identity onto survey respondents and construe it to be a fair test of constructivist scholarship.}
+
+\newpage
+
+\bibliography{references}
+
+\newpage
+
+\appendix
+
+\renewcommand{\thetable}{A\arabic{table}}
+\setcounter{table}{0}
+
+\renewcommand{\thefigure}{A\arabic{figure}}
+\setcounter{figure}{0}
+
+\section{Robustness Tests}
+
+\subsection*{Overall Support}
+
+First, I replicate \autoref{fig:control-taboo} for each of my treatment groups to visualize how they alter overall support for nuclear use. This approach is different than \autoref{fig:figure-2} in that 1). I do not run linear probability models in which I account for other variables, and 2). I do not dichotomize the outcome. Instead, as described in the research methods section, I group support, opposition, and indifference to nuclear use together.
+
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=1.4\textwidth, angle=90]{Figures/A1_NFU_Treatment.jpg}
+    \caption{ }
+    \label{fig:figure-a1}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=1.4\textwidth, angle=90]{Figures/A2_Identity_Treatment.jpg}
+    \caption{ }
+    \label{fig:figure-a2}
+\end{figure}
+
+\clearpage
+
+\begin{figure}[p]
+    \centering
+    \includegraphics[width=1.4\textwidth, angle=90]{Figures/A3_Interaction.jpg}
+    \caption{ }
+    \label{fig:figure-a3}
+\end{figure}
+
+\clearpage
+
+\subsection*{A Note on Imputation}
+For covariates, I use the following imputation procedures:
+
+\textit{Party:} Respondents who indicate that they do not know what party they support are grouped with those reporting that they support neither the BJP nor Congress.
+
+\textit{Religion}: Respondents who do not report their religion are imputed as being Hindu.
+
+\textit{Gender}: Respondents who do not report their gender are imputed as being male.
+
+\textit{Education:} Respondents who do not report their education are imputed as having their bachelor's. This is because respondents overwhelmingly have their bachelor's in this sample.
+
+\textit{Border Pakistan:} Respondents who do not report what state they live in are imputed as not living in a state that borders Pakistan.
+
+\subsection*{OLS Models}
+
+First, I replicate the OLS model presented in ~\autoref{tab:ols-main-effects}, changing imputation procedures and dropping respondents who fail comprehension checks. In addition to regressing the ICW index on the relevant variables, I do so for the PCA index as well. Like the former, the PCA index is \textit{z}-standardized. Block fixed effects are included for party in all models, as well as LASSO-selected covariates. Discrepancies in what control variables are included between the ICW and PCA models are attributable to LASSO selection. For models in which I include all control variables, see \autoref{tab:all-control-midpoint}  and \autoref{tab:all-control-drop-midpoint}.\\
+
+\begin{table}[htbp]
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Keep Respondents who Fail Comprehension Checks and Use Midpoint Imputation},
+label={tab:tab-a1},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Robust HC2 standard errors in parentheses. 
+    Party is a block fixed effect; all other covariates are LASSO-selected.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[0.27\textwidth]Q[0.27\textwidth]Q[0.27\textwidth]},
+hline{2}={1-3}{solid, black, 0.05em},
+hline{9}={1-3}{solid, black, 0.05em},
+hline{1}={1-3}{solid, black, 0.08em},
+hline{12}={1-3}{solid, black, 0.08em},
+column{2-3}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& ICW & PCA \\
+Identity & \num{0.060} (\num{0.167}) & \num{0.085} (\num{0.193}) \\
+NFU & \num{0.535}*** (\num{0.154}) & \num{0.459}** (\num{0.174}) \\
+NFU x Identity & \num{-0.255} (\num{0.234}) & \num{-0.231} (\num{0.255}) \\
+BJP & \num{-0.502}** (\num{0.172}) & \num{-0.578}*** (\num{0.172}) \\
+INC & \num{0.209} (\num{0.174}) & \num{0.307} (\num{0.191}) \\
+Not Hindu & \num{0.385}** (\num{0.148}) & \num{0.281}* (\num{0.133}) \\
+Constant & \num{-0.051} (\num{0.183}) & \num{0.052} (\num{0.190}) \\
+Num.Obs. & \num{415} & \num{415} \\
+R2 & \num{0.237} & \num{0.254} \\
+R2 Adj. & \num{0.226} & \num{0.243} \\
+\end{talltblr}
+\end{table}  
+
+\clearpage
+
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Keep Respondents who Fail Comprehension Checks and Use NA Imputation},
+label={tab:tab-a1},
+note{ }={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{}={Robust HC2 standard errors in parentheses. 
+    Party is a block fixed effect; all other covariates are LASSO-selected.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[0.27\textwidth]Q[0.27\textwidth]Q[0.27\textwidth]},
+hline{2}={1-3}{solid, black, 0.05em},
+hline{9}={1-3}{solid, black, 0.05em},
+hline{1}={1-3}{solid, black, 0.08em},
+hline{12}={1-3}{solid, black, 0.08em},
+column{2-3}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& ICW & PCA \\
+Identity & \num{0.060} (\num{0.166}) & \num{0.111} (\num{0.199}) \\
+NFU & \num{0.528}*** (\num{0.154}) & \num{0.444}** (\num{0.170}) \\
+NFU x Identity & \num{-0.260} (\num{0.235}) & \num{-0.258} (\num{0.260}) \\
+BJP & \num{-0.515}** (\num{0.173}) & \num{-0.609}*** (\num{0.175}) \\
+INC & \num{0.181} (\num{0.173}) & \num{0.275} (\num{0.194}) \\
+Not Hindu & \num{0.414}** (\num{0.148}) & \num{0.311}* (\num{0.136}) \\
+Constant & \num{-0.050} (\num{0.179}) & \num{0.068} (\num{0.187}) \\
+Num.Obs. & \num{404} & \num{397} \\
+R2 & \num{0.244} & \num{0.263} \\
+R2 Adj. & \num{0.233} & \num{0.252} \\
+\end{talltblr}
+\end{table} 
+
+\clearpage
+
+\begin{table}
+\centering
+\begin{talltblr}[
+caption={Replicate \autoref{tab:ols-main-effects}, Drop Respondents who Fail Attention Checks and Use Midpoint Imputation},
+label = {tab:tab-a2},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Robust HC2 standard errors in parentheses. Party is a block fixed effect; all other covariates are LASSO-selected.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[0.27\textwidth]Q[0.27\textwidth]Q[0.27\textwidth]},
+hline{2}={1-3}{solid, black, 0.05em},
+hline{10}={1-3}{solid, black, 0.05em},
+hline{1}={1-3}{solid, black, 0.08em},
+hline{13}={1-3}{solid, black, 0.08em},
+column{2-3}={}{halign=c},
+column{1}={}{halign=l},
+}                    %% tabularray inner close
+& ICW & PCA \\
+Identity & \num{-0.019} (\num{0.171}) & \num{0.036} (\num{0.191}) \\
+NFU & \num{0.470}** (\num{0.164}) & \num{0.448}* (\num{0.185}) \\
+NFU x Identity & \num{-0.051} (\num{0.244}) & \num{-0.045} (\num{0.268}) \\
+BJP & \num{-0.535}** (\num{0.186}) & \num{-0.694}*** (\num{0.183}) \\
+INC & \num{0.184} (\num{0.187}) & \num{0.251} (\num{0.183}) \\
+Not Hindu & \num{0.405}* (\num{0.167}) & \num{0.337}* (\num{0.138}) \\
+Constant & \num{-0.035} (\num{0.202}) & \num{0.200} (\num{0.275}) \\
+Age &  & \num{-0.003} (\num{0.005}) \\
+Num.Obs. & \num{316} & \num{316} \\
+R2 & \num{0.274} & \num{0.328} \\
+R2 Adj. & \num{0.260} & \num{0.312} \\
+\end{talltblr}
+\end{table} 
+
+\clearpage
+\begin{table}
+\centering
+\begin{talltblr}[
+caption={Replicate \autoref{tab:ols-main-effects}, Drop Respondents who Fail Attention Checks and Use NA Imputation},
+label = {tab:tab-a3},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Robust HC2 standard errors in parentheses. Party is a block fixed effect; all other covariates are LASSO-selected.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[0.27\textwidth]Q[0.27\textwidth]Q[0.27\textwidth]},
+hline{2}={1-3}{solid, black, 0.05em},
+hline{10}={1-3}{solid, black, 0.05em},
+hline{1}={1-3}{solid, black, 0.08em},
+hline{13}={1-3}{solid, black, 0.08em},
+column{2-3}={}{halign=c},
+column{1}={}{halign=l},
+}                    %% tabularray inner close
+& ICW & PCA \\
+Identity & \num{-0.026} (\num{0.172}) & \num{0.063} (\num{0.195}) \\
+NFU & \num{0.446}** (\num{0.166}) & \num{0.394}* (\num{0.182}) \\
+NFU x Identity & \num{-0.027} (\num{0.245}) & \num{-0.027} (\num{0.271}) \\
+BJP & \num{-0.550}** (\num{0.189}) & \num{-0.745}*** (\num{0.186}) \\
+INC & \num{0.159} (\num{0.190}) & \num{0.222} (\num{0.181}) \\
+Not Hindu & \num{0.436}* (\num{0.169}) & \num{0.382}** (\num{0.141}) \\
+Age &  & \num{-0.004} (\num{0.005}) \\
+Constant & \num{-0.029} (\num{0.201}) & \num{0.269} (\num{0.280}) \\
+Num.Obs. & \num{307} & \num{303} \\
+R2 & \num{0.281} & \num{0.348} \\
+R2 Adj. & \num{0.267} & \num{0.333} \\
+\end{talltblr}
+\end{table}  
+
+\clearpage
+
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={OLS Regression, Include All Control Variables},
+label={tab:all-control-midpoint},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Robust HC2 standard errors in parentheses. Keep all respondents who fail comprehension checks; use midpoint imputation.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[0.27\textwidth]Q[0.27\textwidth]Q[0.27\textwidth]},
+hline{2}={1-3}{solid, black, 0.05em},
+hline{13}={1-3}{solid, black, 0.05em},
+hline{1}={1-3}{solid, black, 0.08em},
+hline{16}={1-3}{solid, black, 0.08em},
+column{2-3}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& ICW & PCA \\
+Identity & \num{0.037} (\num{0.128}) & \num{0.207} (\num{0.362}) \\
+NFU & \num{0.401}** (\num{0.128}) & \num{0.883}** (\num{0.334}) \\
+NFU x Identity & \num{-0.159} (\num{0.190}) & \num{-0.391} (\num{0.493}) \\
+BJP & \num{-0.406}** (\num{0.137}) & \num{-1.135}*** (\num{0.329}) \\
+INC & \num{0.154} (\num{0.147}) & \num{0.581} (\num{0.362}) \\
+Bachelor's+ & \num{-0.011} (\num{0.135}) & \num{-0.496} (\num{0.380}) \\
+Not Hindu & \num{0.310}** (\num{0.116}) & \num{0.477}+ (\num{0.253}) \\
+Male & \num{0.098} (\num{0.096}) & \num{0.030} (\num{0.240}) \\
+Age & \num{-0.004} (\num{0.003}) & \num{-0.010} (\num{0.011}) \\
+State Borders Pakistan & \num{-0.124} (\num{0.149}) & \num{-0.181} (\num{0.508}) \\
+Constant & \num{0.092} (\num{0.206}) & \num{0.897} (\num{0.667}) \\
+Num.Obs. & \num{415} & \num{415} \\
+R2 & \num{0.246} & \num{0.265} \\
+R2 Adj. & \num{0.227} & \num{0.246} \\
+\end{talltblr}
+\end{table} 
+
+\clearpage
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Replicate \autoref{tab:ols-main-effects}, Include All Control Variables},
+label={tab:all-control-drop-midpoint},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Robust HC2 standard errors in parentheses. 
+    Drop people who failed attention checks;
+    use midpoint imputation.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[0.27\textwidth]Q[0.27\textwidth]Q[0.27\textwidth]},
+hline{2}={1-3}{solid, black, 0.05em},
+hline{13}={1-3}{solid, black, 0.05em},
+hline{1}={1-3}{solid, black, 0.08em},
+hline{16}={1-3}{solid, black, 0.08em},
+column{2-3}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& ICW & PCA \\
+Identity & \num{-0.024} (\num{0.141}) & \num{0.133} (\num{0.384}) \\
+NFU & \num{0.360}* (\num{0.150}) & \num{0.935}* (\num{0.378}) \\
+NFU x Identity & \num{0.011} (\num{0.212}) & \num{-0.060} (\num{0.525}) \\
+BJP & \num{-0.451}** (\num{0.163}) & \num{-1.374}*** (\num{0.350}) \\
+INC & \num{0.143} (\num{0.168}) & \num{0.476} (\num{0.338}) \\
+Bachelor's+ & \num{0.004} (\num{0.145}) & \num{-0.423} (\num{0.360}) \\
+Not Hindu & \num{0.332}* (\num{0.139}) & \num{0.601}* (\num{0.274}) \\
+Male & \num{0.123} (\num{0.113}) & \num{0.023} (\num{0.258}) \\
+Age & \num{-0.004} (\num{0.004}) & \num{-0.008} (\num{0.010}) \\
+State Borders Pakistan & \num{-0.120} (\num{0.192}) & \num{-0.128} (\num{0.638}) \\
+Constant & \num{0.067} (\num{0.241}) & \num{0.827} (\num{0.658}) \\
+Num.Obs. & \num{311} & \num{311} \\
+R2 & \num{0.279} & \num{0.333} \\
+R2 Adj. & \num{0.255} & \num{0.310} \\
+\end{talltblr}
+\end{table} 
+
+\clearpage
+
+\subsection*{Threshold Regressions}
+
+How do the effects of my treatments change depending on how strongly people feel about nuclear use? To answer this question, I assess whether and how my treatments move people across thresholds on the Likert scale. To do so, I dichotomize my outcome variables along each step of the seven point scale. I subsequently run linear probability models, regressing the dichotomized outcomes on my treatments and controls for religion and party. In the tables below, I use midpoint imputation and do not drop respondents who fail comprehension checks. Note that higher values on the Likert scales imply stronger opposition to nuclear use.\\
+
+\begin{table}[htbp]
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Estimated Effects of Treatments on Perceptions of Ahimsa},
+label={tab:ahimsa-threshold},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Robust HC2 standard errors in parentheses. 
+    Midpoint imputation used. Respondents who fail comprehension checks are not dropped.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-7}{solid, black, 0.05em},
+hline{16}={1-7}{solid, black, 0.05em},
+hline{1}={1-7}{solid, black, 0.08em},
+hline{19}={1-7}{solid, black, 0.08em},
+column{2-7}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& 1 & 2 & 3 & 4 & 5 & 6 \\
+& (\num{0.058}) & (\num{0.077}) & (\num{0.093}) & (\num{0.109}) & (\num{0.168}) & (\num{0.087}) \\
+NFU & \num{0.132}* & \num{0.194}** & \num{0.158}* & \num{0.077} & \num{0.198} & \num{0.258}** \\
+& (\num{0.057}) & (\num{0.068}) & (\num{0.078}) & (\num{0.091}) & (\num{0.133}) & (\num{0.091}) \\
+Identity & \num{0.113}+ & \num{0.169}* & \num{0.031} & \num{-0.017} & \num{0.110} & \num{0.229}* \\
+& (\num{0.064}) & (\num{0.076}) & (\num{0.141}) & (\num{0.131}) & (\num{0.146}) & (\num{0.100}) \\
+NFU x Identity & \num{-0.176}* & \num{-0.203}* & \num{-0.043} & \num{0.056} & \num{-0.088} & \num{-0.226}+ \\
+& (\num{0.073}) & (\num{0.086}) & (\num{0.152}) & (\num{0.151}) & (\num{0.171}) & (\num{0.135}) \\
+BJP & \num{-0.043} & \num{-0.080} & \num{-0.177}+ & \num{-0.155} & \num{-0.230}+ & \num{-0.148} \\
+& (\num{0.050}) & (\num{0.061}) & (\num{0.092}) & (\num{0.100}) & (\num{0.137}) & (\num{0.093}) \\
+INC & \num{0.004} & \num{-0.025} & \num{0.065} & \num{0.111} & \num{0.050} & \num{0.208}* \\
+& (\num{0.038}) & (\num{0.061}) & (\num{0.091}) & (\num{0.105}) & (\num{0.179}) & (\num{0.103}) \\
+Not Hindu & \num{0.067}* & \num{0.079}+ & \num{0.033} & \num{0.049} & \num{0.016} & \num{-0.075} \\
+& (\num{0.031}) & (\num{0.046}) & (\num{0.067}) & (\num{0.076}) & (\num{0.104}) & (\num{0.073}) \\
+Constant & \num{0.860}*** & \num{0.785}*** & \num{0.764}*** & \num{0.685}*** & \num{0.463}** & \num{0.183}* \\
+Num.Obs. & \num{421} & \num{421} & \num{421} & \num{421} & \num{421} & \num{421} \\
+R2 & \num{0.071} & \num{0.088} & \num{0.103} & \num{0.091} & \num{0.094} & \num{0.136} \\
+R2 Adj. & \num{0.057} & \num{0.075} & \num{0.090} & \num{0.077} & \num{0.080} & \num{0.123} \\
+\end{talltblr}
+\end{table} 
+
+\clearpage
+
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Estimated Effects of Treatments on Approval},
+label={tab:approval-threshold},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Robust HC2 standard errors in parentheses. 
+    Midpoint imputation used. Respondents who fail comprehension checks are not dropped.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-7}{solid, black, 0.05em},
+hline{16}={1-7}{solid, black, 0.05em},
+hline{1}={1-7}{solid, black, 0.08em},
+hline{19}={1-7}{solid, black, 0.08em},
+column{2-7}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& 1 & 2 & 3 & 4 & 5 & 6 \\
+NFU & \num{0.083} & \num{0.080} & \num{0.054} & \num{0.039} & \num{-0.086} & \num{-0.153} \\
+& (\num{0.061}) & (\num{0.082}) & (\num{0.093}) & (\num{0.094}) & (\num{0.103}) & (\num{0.117}) \\
+Identity & \num{0.112}+ & \num{0.127} & \num{-0.090} & \num{-0.050} & \num{-0.131} & \num{-0.172} \\
+& (\num{0.062}) & (\num{0.091}) & (\num{0.116}) & (\num{0.100}) & (\num{0.105}) & (\num{0.115}) \\
+NFU x Identity & \num{-0.224}** & \num{-0.227}+ & \num{-0.030} & \num{0.019} & \num{0.185} & \num{0.203} \\
+& (\num{0.085}) & (\num{0.118}) & (\num{0.149}) & (\num{0.134}) & (\num{0.130}) & (\num{0.129}) \\
+BJP & \num{-0.184}*** & \num{-0.237}** & \num{-0.232}* & \num{-0.298}** & \num{-0.202}+ & \num{-0.055} \\
+& (\num{0.052}) & (\num{0.081}) & (\num{0.106}) & (\num{0.108}) & (\num{0.105}) & (\num{0.106}) \\
+INC & \num{-0.018} & \num{0.007} & \num{-0.008} & \num{0.041} & \num{0.061} & \num{0.101} \\
+& (\num{0.030}) & (\num{0.083}) & (\num{0.102}) & (\num{0.121}) & (\num{0.141}) & (\num{0.166}) \\
+Not Hindu & \num{-0.005} & \num{-0.044} & \num{0.125} & \num{0.149}+ & \num{0.183}* & \num{0.204}* \\
+& (\num{0.046}) & (\num{0.071}) & (\num{0.087}) & (\num{0.086}) & (\num{0.084}) & (\num{0.084}) \\
+Constant & \num{0.955}*** & \num{0.869}*** & \num{0.691}*** & \num{0.555}*** & \num{0.413}** & \num{0.253} \\
+& (\num{0.058}) & (\num{0.091}) & (\num{0.110}) & (\num{0.120}) & (\num{0.133}) & (\num{0.154}) \\
+Num.Obs. & \num{421} & \num{421} & \num{421} & \num{421} & \num{421} & \num{421} \\
+R2 & \num{0.103} & \num{0.084} & \num{0.117} & \num{0.182} & \num{0.176} & \num{0.164} \\
+R2 Adj. & \num{0.090} & \num{0.071} & \num{0.104} & \num{0.170} & \num{0.164} & \num{0.152} \\
+\end{talltblr}
+\end{table} 
+
+\clearpage
+
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Estimated Effects of Treatments on Perceptions of How Ethical Nuclear Attack Is},
+label={tab:ethical-threshold},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Robust HC2 standard errors in parentheses. 
+    Midpoint imputation used. Respondents who fail comprehension checks are not dropped.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-7}{solid, black, 0.05em},
+hline{16}={1-7}{solid, black, 0.05em},
+hline{1}={1-7}{solid, black, 0.08em},
+hline{19}={1-7}{solid, black, 0.08em},
+column{2-7}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& 1 & 2 & 3 & 4 & 5 & 6 \\
+NFU & \num{0.024} & \num{0.107}+ & \num{0.170}* & \num{0.117} & \num{0.111} & \num{0.093} \\
+& (\num{0.027}) & (\num{0.063}) & (\num{0.074}) & (\num{0.086}) & (\num{0.098}) & (\num{0.104}) \\
+Identity & \num{0.040} & \num{-0.047} & \num{-0.006} & \num{-0.054} & \num{-0.010} & \num{-0.013} \\
+& (\num{0.027}) & (\num{0.139}) & (\num{0.129}) & (\num{0.106}) & (\num{0.107}) & (\num{0.111}) \\
+NFU x Identity & \num{-0.093}+ & \num{0.001} & \num{-0.090} & \num{0.040} & \num{-0.039} & \num{-0.017} \\
+& (\num{0.048}) & (\num{0.147}) & (\num{0.146}) & (\num{0.135}) & (\num{0.144}) & (\num{0.135}) \\
+BJP & \num{-0.058}* & \num{-0.173}** & \num{-0.233}** & \num{-0.307}** & \num{-0.231}* & \num{0.045} \\
+& (\num{0.027}) & (\num{0.067}) & (\num{0.083}) & (\num{0.093}) & (\num{0.116}) & (\num{0.087}) \\
+INC & \num{-0.004} & \num{-0.026} & \num{-0.018} & \num{0.064} & \num{0.128} & \num{0.264}* \\
+& (\num{0.013}) & (\num{0.040}) & (\num{0.081}) & (\num{0.100}) & (\num{0.129}) & (\num{0.130}) \\
+Not Hindu & \num{0.019} & \num{0.099}* & \num{0.095} & \num{0.065} & \num{0.117} & \num{0.155}+ \\
+& (\num{0.019}) & (\num{0.047}) & (\num{0.067}) & (\num{0.075}) & (\num{0.088}) & (\num{0.080}) \\
+Constant & \num{0.973}*** & \num{0.874}*** & \num{0.788}*** & \num{0.705}*** & \num{0.519}*** & \num{0.080} \\
+& (\num{0.023}) & (\num{0.065}) & (\num{0.080}) & (\num{0.100}) & (\num{0.133}) & (\num{0.095}) \\
+Num.Obs. & \num{421} & \num{421} & \num{421} & \num{421} & \num{421} & \num{421} \\
+R2 & \num{0.041} & \num{0.124} & \num{0.130} & \num{0.178} & \num{0.156} & \num{0.116} \\
+R2 Adj. & \num{0.027} & \num{0.111} & \num{0.117} & \num{0.166} & \num{0.143} & \num{0.103} \\
+\end{talltblr}
+\end{table} 
+
+\clearpage
+
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Estimated Effects of Treatments on Perception of State Identity},
+label={tab:identity-threshold},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Robust HC2 standard errors in parentheses. 
+    Midpoint imputation used. Respondents who fail comprehension checks are not dropped.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-7}{solid, black, 0.05em},
+hline{16}={1-7}{solid, black, 0.05em},
+hline{1}={1-7}{solid, black, 0.08em},
+hline{19}={1-7}{solid, black, 0.08em},
+column{2-7}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& 1 & 2 & 3 & 4 & 5 & 6 \\
+NFU & \num{0.057}* & \num{0.123}+ & \num{0.086} & \num{0.214}* & \num{0.142} & \num{0.029} \\
+& (\num{0.028}) & (\num{0.065}) & (\num{0.079}) & (\num{0.089}) & (\num{0.104}) & (\num{0.099}) \\
+Identity & \num{0.051}+ & \num{0.094} & \num{0.063} & \num{0.028} & \num{0.005} & \num{-0.001} \\
+& (\num{0.030}) & (\num{0.071}) & (\num{0.093}) & (\num{0.112}) & (\num{0.108}) & (\num{0.108}) \\
+NFU x Identity & \num{-0.094}* & \num{-0.240}** & \num{-0.143} & \num{-0.104} & \num{-0.070} & \num{0.073} \\
+& (\num{0.038}) & (\num{0.090}) & (\num{0.114}) & (\num{0.137}) & (\num{0.145}) & (\num{0.135}) \\
+BJP & \num{-0.031} & \num{-0.010} & \num{-0.131} & \num{-0.282}** & \num{-0.188} & \num{0.014} \\
+& (\num{0.022}) & (\num{0.070}) & (\num{0.085}) & (\num{0.098}) & (\num{0.119}) & (\num{0.081}) \\
+INC & \num{-0.009} & \num{0.079} & \num{0.071} & \num{0.112} & \num{0.151} & \num{0.330}** \\
+& (\num{0.022}) & (\num{0.075}) & (\num{0.088}) & (\num{0.111}) & (\num{0.138}) & (\num{0.126}) \\
+Not Hindu & \num{0.025} & \num{0.031} & \num{-0.031} & \num{0.052} & \num{0.147} & \num{0.078} \\
+& (\num{0.016}) & (\num{0.053}) & (\num{0.072}) & (\num{0.077}) & (\num{0.090}) & (\num{0.078}) \\
+Constant & \num{0.945}*** & \num{0.812}*** & \num{0.825}*** & \num{0.639}*** & \num{0.444}** & \num{0.103} \\
+& (\num{0.025}) & (\num{0.080}) & (\num{0.102}) & (\num{0.114}) & (\num{0.140}) & (\num{0.082}) \\
+Num.Obs. & \num{421} & \num{421} & \num{421} & \num{421} & \num{421} & \num{421} \\
+R2 & \num{0.027} & \num{0.053} & \num{0.048} & \num{0.179} & \num{0.154} & \num{0.138} \\
+R2 Adj. & \num{0.013} & \num{0.039} & \num{0.034} & \num{0.167} & \num{0.142} & \num{0.126} \\
+\end{talltblr}
+\end{table} 
+
+\clearpage
+
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Estimated Effects of Treatments on Preference for the Ground War over Nuclear Attack},
+label={tab:prefer-threshold},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Robust HC2 standard errors in parentheses. 
+    Midpoint imputation used. Respondents who fail comprehension checks are not dropped.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-7}{solid, black, 0.05em},
+hline{16}={1-7}{solid, black, 0.05em},
+hline{1}={1-7}{solid, black, 0.08em},
+hline{19}={1-7}{solid, black, 0.08em},
+column{2-7}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& 1 & 2 & 3 & 4 & 5 & 6 \\
+NFU & \num{0.035} & \num{0.066} & \num{0.049} & \num{0.128} & \num{0.111} & \num{0.022} \\
+& (\num{0.022}) & (\num{0.060}) & (\num{0.061}) & (\num{0.089}) & (\num{0.135}) & (\num{0.125}) \\
+Identity & \num{0.030} & \num{0.071} & \num{0.037} & \num{-0.107} & \num{-0.022} & \num{-0.126} \\
+& (\num{0.025}) & (\num{0.065}) & (\num{0.072}) & (\num{0.127}) & (\num{0.142}) & (\num{0.115}) \\
+NFU x Identity & \num{-0.085}+ & \num{-0.109} & \num{-0.067} & \num{0.070} & \num{0.080} & \num{0.103} \\
+& (\num{0.044}) & (\num{0.083}) & (\num{0.090}) & (\num{0.148}) & (\num{0.170}) & (\num{0.134}) \\
+BJP & \num{-0.048}* & \num{-0.193}*** & \num{-0.199}*** & \num{-0.228}* & \num{-0.148} & \num{-0.091} \\
+& (\num{0.020}) & (\num{0.049}) & (\num{0.053}) & (\num{0.096}) & (\num{0.141}) & (\num{0.119}) \\
+INC & \num{-0.003} & \num{-0.020} & \num{0.001} & \num{0.085} & \num{0.028} & \num{-0.006} \\
+& (\num{0.007}) & (\num{0.027}) & (\num{0.033}) & (\num{0.106}) & (\num{0.182}) & (\num{0.172}) \\
+Not Hindu & \num{0.029}** & \num{-0.045} & \num{-0.042} & \num{-0.005} & \num{0.003} & \num{0.150} \\
+& (\num{0.011}) & (\num{0.047}) & (\num{0.049}) & (\num{0.079}) & (\num{0.108}) & (\num{0.094}) \\
+Constant & \num{0.974}*** & \num{0.994}*** & \num{0.973}*** & \num{0.745}*** & \num{0.455}** & \num{0.275} \\
+& (\num{0.018}) & (\num{0.054}) & (\num{0.058}) & (\num{0.112}) & (\num{0.175}) & (\num{0.167}) \\
+Num.Obs. & \num{421} & \num{421} & \num{421} & \num{421} & \num{421} & \num{421} \\
+R2 & \num{0.049} & \num{0.090} & \num{0.080} & \num{0.127} & \num{0.052} & \num{0.079} \\
+R2 Adj. & \num{0.035} & \num{0.077} & \num{0.067} & \num{0.114} & \num{0.038} & \num{0.066} \\
+\end{talltblr}
+\end{table} 
+
+\clearpage
+
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Estimated Effects of Treatments on People's Tendency to Protest the Attack},
+label={tab:protest-threshold},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Robust HC2 standard errors in parentheses. 
+    Midpoint imputation used. Respondents who fail comprehension checks are not dropped.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-7}{solid, black, 0.05em},
+hline{16}={1-7}{solid, black, 0.05em},
+hline{1}={1-7}{solid, black, 0.08em},
+hline{19}={1-7}{solid, black, 0.08em},
+column{2-7}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& 1 & 2 & 3 & 4 & 5 & 6 \\
+NFU & \num{0.008} & \num{0.150}* & \num{0.365}** & \num{0.323}** & \num{0.318}* & \num{0.171} \\
+& (\num{0.030}) & (\num{0.074}) & (\num{0.122}) & (\num{0.118}) & (\num{0.124}) & (\num{0.123}) \\
+Identity & \num{-0.065} & \num{0.049} & \num{0.215} & \num{-0.021} & \num{0.003} & \num{-0.046} \\
+& (\num{0.062}) & (\num{0.100}) & (\num{0.146}) & (\num{0.130}) & (\num{0.123}) & (\num{0.107}) \\
+NFU x Identity & \num{0.027} & \num{-0.123} & \num{-0.309}* & \num{-0.031} & \num{-0.163} & \num{-0.052} \\
+& (\num{0.072}) & (\num{0.111}) & (\num{0.155}) & (\num{0.150}) & (\num{0.146}) & (\num{0.136}) \\
+BJP & \num{0.012} & \num{-0.063} & \num{-0.084} & \num{-0.245}* & \num{-0.164} & \num{-0.070} \\
+& (\num{0.050}) & (\num{0.071}) & (\num{0.110}) & (\num{0.107}) & (\num{0.121}) & (\num{0.126}) \\
+INC & \num{-0.029} & \num{-0.024} & \num{-0.041} & \num{-0.086} & \num{-0.013} & \num{-0.087} \\
+& (\num{0.049}) & (\num{0.069}) & (\num{0.156}) & (\num{0.153}) & (\num{0.170}) & (\num{0.167}) \\
+Not Hindu & \num{0.077} & \num{0.099} & \num{0.044} & \num{0.072} & \num{0.188}+ & \num{0.265}** \\
+& (\num{0.052}) & (\num{0.063}) & (\num{0.094}) & (\num{0.089}) & (\num{0.097}) & (\num{0.092}) \\
+Constant & \num{0.929}*** & \num{0.789}*** & \num{0.555}*** & \num{0.501}*** & \num{0.287}+ & \num{0.177} \\
+& (\num{0.040}) & (\num{0.074}) & (\num{0.137}) & (\num{0.139}) & (\num{0.160}) & (\num{0.166}) \\
+Num.Obs. & \num{421} & \num{421} & \num{421} & \num{421} & \num{421} & \num{421} \\
+R2 & \num{0.034} & \num{0.049} & \num{0.094} & \num{0.150} & \num{0.148} & \num{0.124} \\
+R2 Adj. & \num{0.020} & \num{0.035} & \num{0.081} & \num{0.138} & \num{0.136} & \num{0.111} \\
+\end{talltblr}
+\end{table} 
+
+\clearpage
+
+\begin{table}
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Estimated Effects of Treatments on People's Stated Likelihood of Voting Against Government},
+label={tab:vote-threshold},
+note{}={+ p \num{< 0.1}, * p \num{< 0.05}, ** p \num{< 0.01}, *** p \num{< 0.001}},
+note{ }={Robust HC2 standard errors in parentheses. 
+    Midpoint imputation used. Respondents who fail comprehension checks are not dropped.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
+hline{2}={1-7}{solid, black, 0.05em},
+hline{16}={1-7}{solid, black, 0.05em},
+hline{1}={1-7}{solid, black, 0.08em},
+hline{19}={1-7}{solid, black, 0.08em},
+column{2-7}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& 1 & 2 & 3 & 4 & 5 & 6 \\
+NFU & \num{0.244}* & \num{0.255}* & \num{0.109} & \num{0.150} & \num{0.127} & \num{-0.025} \\
+& (\num{0.117}) & (\num{0.116}) & (\num{0.124}) & (\num{0.106}) & (\num{0.108}) & (\num{0.092}) \\
+Identity & \num{0.316}** & \num{0.061} & \num{0.003} & \num{-0.032} & \num{0.008} & \num{-0.063} \\
+& (\num{0.111}) & (\num{0.138}) & (\num{0.133}) & (\num{0.105}) & (\num{0.104}) & (\num{0.096}) \\
+NFU x Identity & \num{-0.329}** & \num{-0.192} & \num{0.001} & \num{0.066} & \num{-0.041} & \num{0.142} \\
+& (\num{0.116}) & (\num{0.154}) & (\num{0.154}) & (\num{0.140}) & (\num{0.137}) & (\num{0.119}) \\
+BJP & \num{-0.109} & \num{-0.195} & \num{-0.210} & \num{-0.092} & \num{-0.095} & \num{0.018} \\
+& (\num{0.114}) & (\num{0.137}) & (\num{0.139}) & (\num{0.109}) & (\num{0.104}) & (\num{0.065}) \\
+INC & \num{0.143} & \num{0.238} & \num{0.192} & \num{0.291}* & \num{0.287}* & \num{0.354}** \\
+& (\num{0.158}) & (\num{0.160}) & (\num{0.168}) & (\num{0.137}) & (\num{0.136}) & (\num{0.116}) \\
+Not Hindu & \num{-0.056} & \num{0.043} & \num{0.097} & \num{0.098} & \num{0.126} & \num{0.116}+ \\
+& (\num{0.083}) & (\num{0.095}) & (\num{0.103}) & (\num{0.090}) & (\num{0.086}) & (\num{0.068}) \\
+Constant & \num{0.682}*** & \num{0.565}** & \num{0.508}** & \num{0.226}+ & \num{0.166} & \num{0.069} \\
+& (\num{0.175}) & (\num{0.184}) & (\num{0.186}) & (\num{0.124}) & (\num{0.115}) & (\num{0.073}) \\
+Num.Obs. & \num{421} & \num{421} & \num{421} & \num{421} & \num{421} & \num{421} \\
+R2 & \num{0.164} & \num{0.192} & \num{0.168} & \num{0.181} & \num{0.191} & \num{0.205} \\
+R2 Adj. & \num{0.152} & \num{0.180} & \num{0.156} & \num{0.169} & \num{0.179} & \num{0.194} \\
+\end{talltblr}
+\end{table}
+
+\clearpage
+
+\subsection*{Historical Attitudes}
+
+Discussing the results of my survey, I briefly compare the demographic differences I found in my survey to those in a United States Intelligence Agency survey conducted in 1994. Below, I regress responses to two questions on a set of demographic variables. The first asks, “Do you agree or disagree that India should sign the nuclear Non-Proliferation Treaty (NPT), agreeing not to acquire nuclear weapons and accepting international inspection of its nuclear power facilities? Strongly or only somewhat?” The second asks, “Prime Minister Narasimha Rao stated in June this year that India would like to retain the option of making a nuclear bomb so long as there was no international agreement to ban nuclear weapons on all nations. Do you agree or disagree with this statement? Strongly or only somewhat?” Respondents could respond on a four point Likert scale, indicating that they either (dis)agree strongly or somewhat. Respondents were not given an option to chose being indifferent, but could indicate that they don't know which they would prefer. Below, I use midpoint imputation, placing respondents who don't know what nuclear policy they would support in the middle of the Likert scale. Of note is that gender is not ever statistically significant, and Hindus are not categorically more hawkish.
+
+\begin{table}[htbp!]
+\centering
+\begin{talltblr}[         %% tabularray outer open
+caption={Historical Attitudes toward Nuclear Weapons},
+label = {History},
+note{}={Robust HC2 standard errors in parentheses.},
+]                     %% tabularray outer close
+{                     %% tabularray inner open
+colspec={Q[]Q[]Q[]},
+hline{2}={1-3}{solid, black, 0.05em},
+hline{10}={1-3}{solid, black, 0.05em},
+hline{1}={1-3}{solid, black, 0.08em},
+hline{13}={1-3}{solid, black, 0.08em},
+column{2-3}={}{halign=c},
+column{1}={}{halign=l},
+}                     %% tabularray inner close
+& NPT & Nuclear Option \\
+Constant & \num{3.915}*** (\num{0.259}) & \num{1.740}*** (\num{0.189}) \\
+Female & \num{-0.051} (\num{0.077}) & \num{0.002} (\num{0.050}) \\
+Age & \num{-0.071}* (\num{0.031}) & \num{-0.019} (\num{0.020}) \\
+Some Secondary Schooling & \num{0.142} (\num{0.179}) & \num{-0.192} (\num{0.140}) \\
+Muslim & \num{0.011} (\num{0.192}) & \num{0.037} (\num{0.141}) \\
+Christian & \num{-0.517}* (\num{0.205}) & \num{0.136} (\num{0.185}) \\
+Sikh & \num{0.467}** (\num{0.171}) & \num{-0.086} (\num{0.113}) \\
+Other Religion & \num{-0.294} (\num{0.323}) & \num{-0.164} (\num{0.269}) \\
+Num.Obs. & \num{1475} & \num{1477} \\
+R2 & \num{0.034} & \num{0.017} \\
+R2 Adj. & \num{0.022} & \num{0.005} \\
+\end{talltblr}
+\end{table} 
+
+\clearpage
+\section{Experimental Materials}
+\label{app:vignettes}
+\subsection*{Control Article}
+\includepdf[pages=-]{Experimental Materials/Controlpdf.pdf}
+\subsection*{Treatment Article}
+\includepdf[pages=-]{Experimental Materials/nfupdf.pdf}
+\subsection*{Arguments}
+
+\textbf{Reaction 1:} The government’ s use of nuclear weapons was morally repugnant and contradicts Mahatma Gandhi’s, Jawaharlal Nehru’s, and this entire country's legacy of non-violence. It violates everything that we know about ourselves—it should never have happened.
+
+\textbf{Reaction 2:} India for decades has led the fight for a nuclear-free world, criticizing the Americans, British, and whoever else for their cavalier attitude toward nuclear weapons. Gandhi and Nehru wanted a safer world, a more dignified world, where the annihilating power of nuclear weapons didn’t haunt anyone. This government’s decision to use the same weapons, however, has made India abandon that legacy. We are now no better than rest.
+
+\textbf{Reaction 3:} For generations, India claimed moral leadership by rejecting the logic that security must rest on mass destruction. That claim carried weight precisely because others failed to uphold it. By resorting to nuclear violence, this government has dissolved the distinction between India’s vision of global responsibility and the reckless behavior it once condemned.
+
+\section{Questionnaire}
+
+\includepdf[pages=-]{Experimental Materials/Questionnaire.pdf}
+
+\end{document}
