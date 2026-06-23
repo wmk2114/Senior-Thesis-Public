@@ -98,8 +98,7 @@ install.packages(c(
 To reproduce the analysis:
 
 1. Open R or RStudio.
-2. Change your working directory accordingly. Currently set as:
-   - `~/Desktop/Columbia 2025/Senior Thesis/Data Analysis`
+2. Change your working directory accordingly.
 3. Source the preprocessing script first, then run the analysis and visualization scripts in order:
    - `source("Scripts/Data Preprocessing.R")`
    - `source("Scripts/Main Analysis.R")`
