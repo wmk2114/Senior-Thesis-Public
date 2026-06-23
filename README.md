@@ -1,16 +1,14 @@
 # We Don't Do That: State Identity and Nuclear Non-Use
-This repository contains the analysis code, supporting files, and documentation for a senior thesis project in political science examining whether nuclear weapons use is treated as a taboo and how national identity alters public support for nuclear non-use.
+Is the use of nuclear weapons taboo, and if it is not, how can people's aversion to it be strengthened?
 
 ## Project Summary
-This project explores the relationship between nuclear non-use norms and state identity in shaping attitudes toward nuclear attack. It combines an original online survey experiment with historical public opinion evidence to answer three core research questions:
+This thesis entertains three questions commonly debated in international relations scholarship:
 
-- Is there a normative taboo against nuclear weapons use?
-- How do appeals to national identity affect support for nuclear violence?
-- Are identity and non-use frames associated with different treatment effects across political groups?
+- Is there a taboo against nuclear weapons use?
+- How do conceptions of state identity impact people's support for norm-breaking actions?
+- How does the institutionalization of non-use affect the public's opposition to nuclear use?
 
-## Links
-- Final thesis PDF: [Senior Thesis — Wyatt King](https://wmk2114.github.io/my-site/pdfs/Senior%20Thesis%20Wyatt%20King.pdf)
-- Charles A. Beard Prize information: [Charles A. Beard Prize](https://www.oah.org/awards/dissertation-awards/charles-a-beard-prize/)
+You can find the final version of my thesis [here](https://wmk2114.github.io/my-site/pdfs/Senior%20Thesis%20Wyatt%20King.pdf]).
 
 ## Repository Structure
 The analysis folder contains the following files and directories:
@@ -100,22 +98,11 @@ install.packages(c(
 To reproduce the analysis:
 
 1. Open R or RStudio.
-2. Set the working directory to this folder:
+2. Change your working directory accordingly. Currently set as:
    - `~/Desktop/Columbia 2025/Senior Thesis/Data Analysis`
 3. Source the preprocessing script first, then run the analysis and visualization scripts in order:
    - `source("Scripts/Data Preprocessing.R")`
    - `source("Scripts/Main Analysis.R")`
    - `source("Scripts/Robustness Tests.R")`
    - `source("Scripts/Data Visualizations.R")`
-
-## Notes
-- `Data Preprocessing.R` creates the cleaned data objects used by later scripts.
-- `Main Analysis.R` contains the main regression tables and treatment effect estimates.
-- `Robustness Tests.R` contains supplemental checks for the appendix.
-- `Data Visualizations.R` produces figures and table-ready plots.
-- The main analyses use midpoint imputation and robust HC2 standard errors.
-- Respondents who fail manipulation or comprehension checks are retained unless otherwise noted in the scripts.
-
-## Acknowledgments
-This project was completed as a senior thesis in the Columbia University Department of Political Science.
 
