@@ -1,0 +1,372 @@
+\documentclass[12pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{hyperref}
+ 
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+ 
+\newcounter{qnum}
+\newcommand{\question}[1]{%
+  \stepcounter{qnum}%
+  \noindent\textbf{Q\thequnum.} #1\par\medskip
+}
+ 
+\newcommand{\choices}[1]{%
+  \begin{itemize}[leftmargin=2em, itemsep=2pt, topsep=2pt]
+    #1
+  \end{itemize}\medskip
+}
+ 
+\newcommand{\likert}[1]{%
+  \begin{itemize}[leftmargin=2em, itemsep=2pt, topsep=2pt]
+    #1
+  \end{itemize}\medskip
+}
+
+\pagestyle{empty}
+\begin{document}
+%-------------------------------------------------------
+\section{Pre-Treatment Questions}
+%-------------------------------------------------------
+
+\question{What is your gender?}
+\choices{
+  \item Male
+  \item Female
+  \item Other
+  \item Prefer Not to Say
+}
+
+\question{How old are you?}
+
+\noindent\textit{[Slider: minimum 18, maximum 100]} \medskip
+
+\question{If there were an election for the Lok Sabha today, would you prefer if the Bharatiya Janata Party (BJP) or the Indian National Congress (INC) won the most seats?}
+\choices{
+  \item BJP
+  \item INC
+  \item Neither
+  \item Don't Know
+}
+
+\question{How strongly do you agree or disagree with the statement that: \textit{India should improve diplomatic relations with Bangladesh.}}
+\likert{
+  \item Strongly Disagree
+  \item Disagree
+  \item Neither Agree Nor Disagree
+  \item Agree
+  \item Strongly Agree
+  \item Don't Know
+}
+
+\question{How strongly do you agree or disagree with the statement that: \textit{India should improve diplomatic relations with Pakistan.}}
+\likert{
+  \item Strongly Disagree
+  \item Disagree
+  \item Neither Agree Nor Disagree
+  \item Agree
+  \item Strongly Agree
+  \item Don't Know
+}
+
+\question{How strongly do you agree or disagree with the statement that: \textit{India should improve diplomatic relations with China.}}
+\likert{
+  \item Strongly Disagree
+  \item Disagree
+  \item Neither Agree Nor Disagree
+  \item Agree
+  \item Strongly Agree
+  \item Don't Know
+}
+
+%-------------------------------------------------------
+\section{Vignette Notification (Treatment Condition)}
+\label{sec:notif-treatment}
+%-------------------------------------------------------
+
+\noindent\textit{[Displayed to participants randomized into the \textbf{treatment} (national identity) condition.]}
+
+\bigskip
+
+\noindent In the following section, you will read a hypothetical news article describing an Indian nuclear attack against Pakistan. The scenario described does not reflect reality: India has not used nuclear weapons, and the two countries are not currently at war. After reading the article, you will read three reactions to the attack.
+
+We simply wish to understand how you would view events that could occur in the future.
+
+Please read the article and reactions thoroughly, knowing that you will answer comprehension questions related to them. \textbf{If you answer all three questions correctly, you will receive an additional \$0.50 upon completion of this survey.}
+
+\section{Vignette Notification (Control Condition)}
+\label{sec:notif-control}
+%-------------------------------------------------------
+ 
+\noindent\textit{[Displayed to participants randomized into the \textbf{control} (no reactions) condition.]}
+ 
+\bigskip
+ 
+\noindent In the following section, you will read a hypothetical news article describing an Indian nuclear attack against Pakistan. The scenario described does not reflect reality: India has not used nuclear weapons, and the two countries are not currently at war.
+ 
+We simply wish to understand how you would view events that could occur in the future.
+ 
+Please read the article thoroughly, knowing that you will answer three comprehension questions related to the content of it. \textbf{If you answer all three questions correctly, you will receive an additional \$0.50 upon completion of this survey.}
+
+%-------------------------------------------------------
+\section{Comprehension Check Questions}
+%-------------------------------------------------------
+
+\subsection*{Control Condition Comprehension Checks}
+
+\question{In the article that you read, what did India's nuclear attack against Pakistan target?}
+\choices{
+  \item Multiple large cities
+  \item Pakistan's military in Kashmir
+  \item Sites throughout Pakistan suspected of hosting nuclear weapons
+  \item Pakistan's civilian government
+  \item Don't Know
+}
+
+\question{In the article that you read, what international organization warned about the number of civilian casualties caused by the attack?}
+\choices{
+  \item The International Atomic Energy Agency
+  \item The U.N.\ General Assembly
+  \item The U.N.\ Security Council
+  \item The World Health Organization
+  \item Don't Know
+}
+
+\question{In the article that you read, how did the war between India and Pakistan start?}
+\choices{
+  \item India invaded Pakistan after it supported a terrorist attack in Delhi
+  \item Pakistan invaded India after it supported a terrorist attack in Karachi
+  \item Pakistan declared war after mobilizing troops near Kashmir
+  \item India mistakenly shot down a Pakistani civilian aircraft that crossed into its air space
+  \item Don't Know
+}
+
+\subsection*{Treatment Condition Comprehension Checks}
+
+\question{In the news story that you read, what did India's nuclear attack against Pakistan target?}
+\choices{
+  \item Multiple large cities
+  \item Pakistan's military in Kashmir
+  \item Sites throughout Pakistan suspected of hosting nuclear weapons
+  \item Pakistan's civilian government
+  \item Don't Know
+}
+
+\question{In the news story that you read, how did the war between India and Pakistan start?}
+\choices{
+  \item India invaded Pakistan after it supported a terrorist attack in Delhi
+  \item Pakistan invaded India after it supported a terrorist attack in Karachi
+  \item Pakistan declared war after mobilizing troops near Kashmir
+  \item India mistakenly shot down a Pakistani civilian aircraft that crossed into its air space
+  \item Don't Know
+}
+
+\question{In the reactions that you read, who is one contemporary or historical political figure that was mentioned?}
+\choices{
+  \item Jawaharlal Nehru
+  \item Narendra Modi
+  \item Sardar Vallabhbhai Patel
+  \item Manmohan Singh
+  \item Don't Know
+}
+
+%-------------------------------------------------------
+\section{Outcome Measures}
+%-------------------------------------------------------
+
+\question{Given the circumstances described in the article, to what extent do you approve of India's nuclear attack?}
+\likert{
+  \item Strongly Disapprove
+  \item Disapprove
+  \item Somewhat Disapprove
+  \item Neither Disapprove nor Approve
+  \item Somewhat Approve
+  \item Approve
+  \item Strongly Approve
+  \item Don't Know
+}
+
+\question{Given the circumstances described in the article, if you could have chosen between launching the nuclear attack against Pakistan or not launching the attack and continuing India's ground war, which option would you have preferred?}
+\likert{
+  \item Strongly Prefer Ground War
+  \item Prefer Ground War
+  \item Somewhat Prefer Ground War
+  \item Equally Prefer Ground War and Nuclear Attack
+  \item Somewhat Prefer Nuclear Attack
+  \item Prefer Nuclear Attack
+  \item Strongly Prefer Nuclear Attack
+  \item Don't Know
+}
+
+\question{Given the circumstances described in the article, how much more or less likely would you be to vote for a member of the governing party in the next election?}
+\likert{
+  \item Much Less Likely
+  \item Less Likely
+  \item Somewhat Less Likely
+  \item Neither More nor Less Likely
+  \item Somewhat More Likely
+  \item More Likely
+  \item Much More Likely
+  \item Don't Know
+}
+
+\question{Given the circumstances described in the article, how likely would you be to publicly protest the use of nuclear weapons?}
+\likert{
+  \item Very Unlikely
+  \item Unlikely
+  \item Somewhat Unlikely
+  \item Neither Likely nor Unlikely
+  \item Somewhat Likely
+  \item Likely
+  \item Very Likely
+  \item Don't Know
+}
+
+\question{How strongly do you agree or disagree with the statement that the use of nuclear weapons like that described in the article \textit{violates India's national identity}?}
+\likert{
+  \item Strongly Disagree
+  \item Disagree
+  \item Somewhat Disagree
+  \item Neither Agree nor Disagree
+  \item Somewhat Agree
+  \item Agree
+  \item Strongly Agree
+  \item Don't Know
+}
+
+\question{How strongly do you agree or disagree with the statement that India's use of nuclear weapons like that described in the article \textit{violates ahimsa}?}
+\likert{
+  \item Strongly Disagree
+  \item Disagree
+  \item Somewhat Disagree
+  \item Neither Agree nor Disagree
+  \item Somewhat Agree
+  \item Agree
+  \item Strongly Agree
+  \item Don't Know
+}
+
+\question{How strongly do you agree or disagree with the statement that the use of nuclear weapons like that described in the article \textit{is unethical}?}
+\likert{
+  \item Strongly Disagree
+  \item Disagree
+  \item Somewhat Disagree
+  \item Neither Agree Nor Disagree
+  \item Somewhat Agree
+  \item Agree
+  \item Strongly Agree
+  \item Don't Know
+}
+
+%-------------------------------------------------------
+\section{Demographic Questions}
+%-------------------------------------------------------
+
+\question{What state do you live in?}
+\choices{
+  \item Andhra Pradesh
+  \item Arunachal Pradesh
+  \item Assam
+  \item Bihar
+  \item Goa
+  \item Gujarat
+  \item Haryana
+  \item Himachal Pradesh
+  \item Jharkhand
+  \item Karnataka
+  \item Kerala
+  \item Madhya Pradesh
+  \item Maharashtra
+  \item Manipur
+  \item Meghalaya
+  \item Mizoram
+  \item Nagaland
+  \item Odisha
+  \item Punjab
+  \item Rajasthan
+  \item Sikkim
+  \item Tamil Nadu
+  \item Telangana
+  \item Tripura
+  \item Uttar Pradesh
+  \item Uttarakhand
+  \item West Bengal
+  \item Andaman and Nicobar Islands
+  \item Chandigarh
+  \item Dadra and Nagar Haveli and Daman and Diu
+  \item Delhi (NCT of Delhi)
+  \item Jammu and Kashmir
+  \item Ladakh
+  \item Lakshadweep
+  \item Puducherry
+  \item Prefer not to say
+}
+
+\question{What is the highest level of school you have completed or the highest degree you have received?}
+\choices{
+  \item No formal education
+  \item Primary school
+  \item Secondary school
+  \item Senior secondary school (12th standard)
+  \item Bachelor's Graduate
+  \item Master's Degree
+  \item Doctoral degree
+  \item Prefer not to say
+}
+
+\question{Which of these ranges does your household fall into counting all wages, salaries, pensions and other income that comes in, before taxes and other deductions?}
+\choices{
+  \item Up to Rs.\ 1,500
+  \item Rs.\ 1,501 to Rs.\ 3,500
+  \item Rs.\ 3,501 to Rs.\ 5,500
+  \item Rs.\ 5,501 to Rs.\ 6,500
+  \item Rs.\ 6,501 to Rs.\ 8,500
+  \item Rs.\ 8,501 to Rs.\ 10,000
+  \item Rs.\ 10,001 to Rs.\ 15,000
+  \item Rs.\ 15,001 to Rs.\ 20,000
+  \item Rs.\ 20,001 to Rs.\ 40,000
+  \item Rs.\ 40,001 and above
+  \item Don't know
+  \item Prefer not to say
+}
+
+\question{What is your religion?}
+\choices{
+  \item Hindu
+  \item Muslim
+  \item Sikh
+  \item Buddhist
+  \item Christian
+  \item Jain
+  \item Not religious
+  \item Other
+  \item Prefer not to say
+}
+
+\question{Are you from a General Category, Scheduled Caste, Scheduled Tribe or Other Backward Class?}
+\choices{
+  \item General Category
+  \item Scheduled Caste
+  \item Scheduled Tribe
+  \item Other Backward Class/Caste
+  \item Prefer not to say
+  \item Don't Know
+  \item Not Applicable
+}
+
+%-------------------------------------------------------
+\section{Exit Reminder}
+%-------------------------------------------------------
+
+\noindent\textit{[Displayed to all participants after the outcome measures.]}
+
+\bigskip
+
+\noindent As a reminder, the scenario described in this survey is strictly hypothetical. India has not launched a nuclear attack against Pakistan, and the two countries are not currently at war.
+
+\end{document}
