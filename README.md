@@ -8,7 +8,7 @@ This thesis entertains three questions commonly debated in international relatio
 - How do conceptions of state identity impact people's support for norm-breaking actions?
 - How does the institutionalization of non-use affect the public's opposition to nuclear use?
 
-You can find the final version of my thesis [here](https://wmk2114.github.io/my-site/pdfs/Senior%20Thesis%20Wyatt%20King.pdf]).
+You can find the final version of my thesis [here](https://wyatt-king.com/pdfs/Senior%20Thesis%20Wyatt%20King.pdf).
 
 ## Repository Structure
 The analysis folder contains the following files and directories:
